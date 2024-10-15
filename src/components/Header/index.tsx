@@ -3,6 +3,8 @@ import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
+import { useHistory } from "react-router-dom";
+
 import { Button } from "../../common/Button";
 import {
   HeaderSection,
@@ -18,6 +20,7 @@ import {
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const history = useHistory();
 
   const toggleButton = () => {
     setVisibility(!visible);
@@ -33,23 +36,58 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+
+
+        {/*<CustomNavLinkSmall onClick={() => scrollTo("home")}>*/}
+        {/*  <Span>{t("Home")}</Span>*/}
+        {/*</CustomNavLinkSmall>*/}
+
+        {/*<CustomNavLinkSmall onClick={() => scrollTo("about")}>*/}
+        {/*  <Span>{t("About")}</Span>*/}
+        {/*</CustomNavLinkSmall>*/}
+
+        <CustomNavLinkSmall onClick={() => history.push("/people")}>
+          <Span>{t("People")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+
+        <CustomNavLinkSmall onClick={() => history.push("/research")}>
+          <Span>{t("Research")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+
+        <CustomNavLinkSmall onClick={() => history.push("/student_project")}>
+          <Span>{t("Student Projects")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
+
+        {/*<CustomNavLinkSmall onClick={() => scrollTo("student_projects")}>*/}
+        {/*  <Span>{t("Student Projects")}</Span>*/}
+        {/*</CustomNavLinkSmall>*/}
+
+
+        <CustomNavLinkSmall onClick={() => scrollTo("seminars")}>
+          <Span>{t("Seminars")}</Span>
         </CustomNavLinkSmall>
+
+
+        <CustomNavLinkSmall onClick={() => scrollTo("publications")}>
+          <Span>{t("Resources")}</Span>
+        </CustomNavLinkSmall>
+
+
+
+        <CustomNavLinkSmall onClick={() => scrollTo("news")}>
+          <Span>{t("News & Events")}</Span>
+        </CustomNavLinkSmall>
+
+
+
+        {/*<CustomNavLinkSmall*/}
+        {/*  style={{ width: "180px" }}*/}
+        {/*  onClick={() => scrollTo("contact")}*/}
+        {/*>*/}
+        {/*  <Span>*/}
+        {/*    <Button>{t("Contact")}</Button>*/}
+        {/*  </Span>*/}
+        {/*</CustomNavLinkSmall>*/}
       </>
     );
   };
@@ -59,8 +97,9 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <SvgIcon src="ltl_logo2.svg" width="220px" height="90px" />
           </LogoContainer>
+
           <NotHidden>
             <MenuItem />
           </NotHidden>

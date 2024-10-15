@@ -2,7 +2,9 @@ import { Row, Col } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
-import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+import {MiddleBlockSection, Content, ContentWrapper, SocialIconContainer} from "./styles";
+import {FooterContainer} from "../Footer/styles";
+import {SvgIcon} from "../../common/SvgIcon";
 
 interface MiddleBlockProps {
   title: string;
@@ -11,7 +13,28 @@ interface MiddleBlockProps {
   t: TFunction;
 }
 
+interface SocialLinkProps {
+  href: string;
+  src: string;
+}
+
+
 const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
+
+  const SocialLink = ({ href, src }: SocialLinkProps) => {
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={src}
+            aria-label={src}
+        >
+          <SvgIcon src={src} width="20px" height="20px" />
+        </a>
+    );
+  };
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -31,6 +54,10 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
                   {t(button)}
                 </Button>
               )}
+
+
+
+
             </Col>
           </ContentWrapper>
         </Row>

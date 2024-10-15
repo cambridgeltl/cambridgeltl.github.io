@@ -1,0 +1,269 @@
+[
+  {
+    "type": "academic staff",
+    "name": "Anna Korhonen",
+    "title": "Professor",
+    "photo": "anna.jpg",
+    "position": "Co-head of LTL, Professor of Natural Language Processing",
+    "link": "https://sites.google.com/site/annakorhonen/"
+  },
+  {
+    "type": "academic staff",
+    "name": "Nigel Collier",
+    "title": "Professor",
+    "photo": "nigel.jpg",
+    "position": "Co-head of LTL, Professor of Natural Language Processing",
+    "link": "https://sites.google.com/site/nhcollier/"
+
+  },
+  {
+    "type": "academic staff",
+    "name": "Theodora Alexopoulou",
+    "title": "Dr",
+    "photo": "dora.jpg",
+    "position": "Assistant Professor",
+    "link": "https://www.mmll.cam.ac.uk/ta259"
+
+  },
+  {
+    "type": "academic staff",
+    "name": "Marco Basaldella",
+    "title": "Dr",
+    "photo": "marco.jpeg",
+    "position": "Affiliated Lecturer",
+    "link": "https://basaldella.it/"
+  },
+  {
+    "type": "academic staff",
+    "name": "Marieke Meelen",
+    "title": "Dr",
+    "photo": "marieke.jpg",
+    "position": "Assistant Professor",
+    "link": "https://www.mmll.cam.ac.uk/dr-marieke-meelen"
+  },
+  {
+    "type": "academic staff",
+    "name": "Thierry Poibeau",
+    "title": "Dr",
+    "photo": "arton232.jpg",
+    "position": "Affiliated Lecturer",
+    "link": "https://www.lattice.cnrs.fr/en/members/direction/thierry-poibeau/?lang=fr"
+  },
+  {
+    "type": "academic staff",
+    "name": "Edoardo Ponti",
+    "title": "Dr",
+    "photo": "edo.jpeg",
+    "position": "Affiliated Lecturer",
+    "link": "https://ducdauge.github.io/"
+  },
+  {
+    "type": "academic staff",
+    "name": "Roi Reichart",
+    "title": "Professor",
+    "photo": "roi.webp",
+    "position": "Affiliated Lecturer",
+    "link": "https://roireichart.com/"
+  },
+  {
+    "type": "academic staff",
+    "name": "Ehsan Shareghi",
+    "title": "Dr",
+    "photo": "ehsan.jpg",
+    "position": "Affiliated Lecturer",
+    "link": "https://www.lattice.cnrs.fr/en/members/direction/thierry-poibeau/?lang=fr"
+  },
+  {
+    "type": "academic staff",
+    "name": "Zaiqiao Meng",
+    "title": "Dr",
+    "photo": "zaiqiao.jpg",
+    "position": "Affiliated Lecturer",
+    "link": "https://www.gla.ac.uk/schools/computing/staff/zaiqiaomeng/"
+  },
+  {
+    "type": "researcher",
+    "name": "Simon Baker",
+    "title": "Dr",
+    "photo": "simon.jpg",
+    "position": "Research Associate",
+    "link": "https://www.languagesciences.cam.ac.uk/directory/simon-baker"
+  },
+  {
+    "type": "researcher",
+    "name": "Charlotte Collins",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Associate",
+    "link": "https://sites.google.com/view/charlottecollins/home"
+  },
+  {
+    "type": "researcher",
+    "name": "Christian Faggionato",
+    "title": "Dr",
+    "photo": "christian.png",
+    "position": "Associated Researcher",
+    "link": ""
+  },
+  {
+    "type": "researcher",
+    "name": "Haim Dubossarsky",
+    "title": "Dr",
+    "photo": "haim.png",
+    "position": "Affiliated Researcher",
+    "link": "https://www.qmul.ac.uk/eecs/people/profiles/haim-dubossarsky.html"
+  },
+  {
+    "type": "researcher",
+    "name": "İlknur Karadeniz",
+    "title": "Dr",
+    "photo": "",
+    "position": "Affiliated Researcher",
+    "link": "https://ilknurkaradeniz.com/"
+  },
+  {
+    "type": "researcher",
+    "name": "Olga Majewska",
+    "title": "Dr",
+    "photo": "olga.jpg",
+    "position": "Affiliated Researcher",
+    "link": "https://om304.github.io/"
+  },
+  {
+    "type": "researcher",
+    "name": "Zihao Fu",
+    "title": "Dr",
+    "photo": "zihao.jpg",
+    "position": "Research Associate",
+    "link": "https://fuzihaofzh.github.io/"
+  },
+  {
+    "type": "researcher",
+    "name": "Ebele Mogo",
+    "title": "Dr",
+    "photo": "ebele.jpg",
+    "position": "Affiliated Researcher",
+    "link": "https://www.mrc-epid.cam.ac.uk/people/ebele-mogo/"
+  },
+  {
+    "type": "researcher",
+    "name": "Ulla Petti",
+    "title": "Dr",
+    "photo": "ulla.jpeg",
+    "position": "Research Associate",
+    "link": "https://www.ullapetti.com"
+  },
+  {
+    "type": "researcher",
+    "name": "Ivan Vulić",
+    "title": "Dr",
+    "photo": "ivan.jpg",
+    "position": "Principal Research Associate",
+    "link": "https://sites.google.com/site/ivanvulic/"
+  },
+  {
+    "type": "student",
+    "name": "Panagiotis Fytas",
+    "title": "Mr",
+    "photo": "panos.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.hardingscholars.fund.cam.ac.uk/panagiotis-fytas-2021-cohort"
+  },
+  {
+    "type": "student",
+    "name": "Songbo Hu",
+    "title": "Mr",
+    "photo": "songbo.jpeg",
+    "position": "PhD Student",
+    "link": "https://songbohu.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Tiancheng Hu",
+    "title": "Mr",
+    "photo": "tiancheng.jpeg",
+    "position": "PhD Student",
+    "link": "http://tiancheng.hu"
+  },
+  {
+    "type": "student",
+    "name": "Chengzu Li",
+    "title": "Mr",
+    "photo": "chengzu.jpeg",
+    "position": "PhD Student",
+    "link": "https://chengzu-li.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Yaoyiran Li",
+    "title": "Mr",
+    "photo": "",
+    "position": "PhD Student",
+    "link": ""
+  },
+  {
+    "type": "student",
+    "name": "Benjamin Minixhofer",
+    "title": "Mr",
+    "photo": "ben.webp",
+    "position": "PhD Student",
+    "link": "https://bmin.ai"
+  },
+  {
+    "type": "student",
+    "name": "Evgeniia Razumovskaia",
+    "title": "Ms",
+    "photo": "genie.jpeg",
+    "position": "PhD Student",
+    "link": "https://evgeniiaraz.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Shun Shao",
+    "title": "Mr",
+    "photo": "shaoshun.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/shun-shao-077564172/"
+  },
+  {
+    "type": "student",
+    "name": "Chang Shu",
+    "title": "Mr",
+    "photo": "shuchang.jpeg",
+    "position": "PhD Student",
+    "link": "https://ciaranshu.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Hannah Sterz",
+    "title": "Ms",
+    "photo": "hannah.jpeg",
+    "position": "PhD Student",
+    "link": "https://hsterz.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Han Zhou",
+    "title": "Mr",
+    "photo": "zhouhan.jpeg",
+    "position": "PhD Student",
+    "link": "https://hzhou.top"
+  },
+  {
+    "type": "student",
+    "name": "Meiru Zhang",
+    "title": "Mr",
+    "photo": "meiru.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.gatescambridge.org/biography/18434/"
+  },
+  {
+    "type": "student",
+    "name": "Chen Cecilia Liu",
+    "title": "Ms",
+    "photo": "cecilia.jpeg",
+    "position": "ELLIS PhD Student",
+    "link": "https://ccliu2.github.io"
+  }
+]
+

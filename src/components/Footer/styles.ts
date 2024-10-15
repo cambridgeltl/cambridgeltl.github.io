@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const FooterSection = styled("footer")`
   background: rgb(241, 242, 243);
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
 `;
 
 export const Title = styled("h4")`
@@ -47,6 +47,8 @@ export const Para = styled("div")`
   color: #18216d;
   font-size: 14px;
   width: 70%;
+  //margin-right: 20px; /* Add margin to the right */
+
 `;
 
 export const Large = styled(Link)`

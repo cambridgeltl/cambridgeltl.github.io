@@ -1,13 +1,16 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "ADVANCING LANGUAGE TECHNOLOGY FOR GOOD",
+  "text": "The Language Technology Lab is a team of researchers pushing the boundaries of natural language processing (NLP) research. Our work targets critical real-world challenges by leveraging the latest advancements in NLP and AI.",
   "button": [
     {
-      "title": "Explore"
+      "title": "About Us",
+      "path" : "/people"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Our Research",
+      "color": "#fff",
+      "path" : "/research"
+
     }
   ]
 }

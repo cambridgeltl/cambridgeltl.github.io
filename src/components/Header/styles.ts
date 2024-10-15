@@ -4,12 +4,23 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+  //background: #001529;
 
   .ant-row-space-between {
-    align-items: center;
+    align-items: baseline;
     text-align: center;
   }
 `;
+
+
+// export const HeaderSection = styled.header`
+//   background: #001529;
+//   padding: 1rem 0;
+//   position: fixed;
+//   width: 100%;
+//   z-index: 1000;
+// `;
+
 
 export const LogoContainer = styled(Link)`
   display: flex;
@@ -61,7 +72,7 @@ export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
   color: #18216d;
   transition: color 0.2s ease-in;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 1rem;
 
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;
@@ -90,6 +101,7 @@ export const Span = styled("span")`
   &:focus {
     color: rgb(255, 130, 92);
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    //text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: rgb(255, 130, 92) underline;
   }
 `;
