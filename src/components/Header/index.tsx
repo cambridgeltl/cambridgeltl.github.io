@@ -37,15 +37,6 @@ const Header = ({ t }: { t: TFunction }) => {
     return (
       <>
 
-
-        {/*<CustomNavLinkSmall onClick={() => scrollTo("home")}>*/}
-        {/*  <Span>{t("Home")}</Span>*/}
-        {/*</CustomNavLinkSmall>*/}
-
-        {/*<CustomNavLinkSmall onClick={() => scrollTo("about")}>*/}
-        {/*  <Span>{t("About")}</Span>*/}
-        {/*</CustomNavLinkSmall>*/}
-
         <CustomNavLinkSmall onClick={() => history.push("/people")}>
           <Span>{t("People")}</Span>
         </CustomNavLinkSmall>
@@ -58,23 +49,17 @@ const Header = ({ t }: { t: TFunction }) => {
           <Span>{t("Student Projects")}</Span>
         </CustomNavLinkSmall>
 
-        {/*<CustomNavLinkSmall onClick={() => scrollTo("student_projects")}>*/}
-        {/*  <Span>{t("Student Projects")}</Span>*/}
-        {/*</CustomNavLinkSmall>*/}
 
-
-        <CustomNavLinkSmall onClick={() => scrollTo("seminars")}>
+        <CustomNavLinkSmall onClick={() => history.push("/seminar")}>
           <Span>{t("Seminars")}</Span>
         </CustomNavLinkSmall>
 
 
-        <CustomNavLinkSmall onClick={() => scrollTo("publications")}>
+        <CustomNavLinkSmall onClick={() => history.push("/resource")}>
           <Span>{t("Resources")}</Span>
         </CustomNavLinkSmall>
 
-
-
-        <CustomNavLinkSmall onClick={() => scrollTo("news")}>
+        <CustomNavLinkSmall onClick={() => history.push("/news")}>
           <Span>{t("News & Events")}</Span>
         </CustomNavLinkSmall>
 

@@ -17,14 +17,13 @@ const Container = lazy(() => import("../../common/Container"));
 // const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
-const People = () => {
+const Seminar = () => {
   return (
     <Container>
 
-        {/*<ScrollToTop />*/}
       <ContentBlock
         direction="right"
-        title={"People"}
+        title={"Seminars"}
         content={"We are a team of academics, professionals, and students from around the world, working together at the University of Cambridge to tackle critical real-world challenges using cutting-edge technologies in NLP and AI."}
         button={[]}
         icon="ltl_garden_high.jpg"
@@ -32,34 +31,8 @@ const People = () => {
         fade_direction={"up"}
       />
 
-      <PeopleListBlock
-        title={"Academic Staff"}
-        content={PeopleContent.filter((item) => item.type === "academic staff")}
-        id="staff"
-        fade_direction={"up"}
-      />
-
-
-        <PeopleListBlock
-            title={"Researchers"}
-            content={PeopleContent.filter((item) => item.type === "researcher")}
-            id="researchers"
-            fade_direction={"up"}
-        />
-
-        <PeopleListBlock
-            title={"Research Students"}
-            content={PeopleContent.filter((item) => item.type === "student")}
-            id="researchers"
-            fade_direction={"up"}
-        />
-
-
-        {/*<M*/}
-
-
     </Container>
   );
 };
 
-export default People;
+export default Seminar;
