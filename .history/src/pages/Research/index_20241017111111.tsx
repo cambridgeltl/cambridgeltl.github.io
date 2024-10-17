@@ -34,7 +34,7 @@ const Research = () => {
 
       <PeopleListBlock
         title={"Active Projects"}
-        content={PeopleContent}
+        content={ProjectContent}
         id="staff"
         fade_direction={"up"}
       />
