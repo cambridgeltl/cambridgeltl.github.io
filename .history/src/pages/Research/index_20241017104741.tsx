@@ -3,7 +3,6 @@ import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import PeopleContent from "../../content/PeopleContent.json";
-import ProjectContent from "../../content/ProjectContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
@@ -27,18 +26,32 @@ const Research = () => {
         title={"Research"}
         content={"LTL is engaged in ongoing projects that aim to advance the field of NLP & AI. Our research focuses on a range of critical issues, and these projects are driven by a team of researchers and students collaborating to explore new approaches and push the boundaries of what NLP technologies can achieve."}
         button={[]}
-        icon="project-replace.jpg"
+        icon="ltl_garden_high.jpg"
         id="home"
         fade_direction={"up"}
       />
 
       <PeopleListBlock
-        title={"Active Projects"}
-        content={PeopleContent}
+        title={"Academic Staff"}
+        content={PeopleContent.filter((item) => item.type === "academic staff")}
         id="staff"
         fade_direction={"up"}
       />
 
+
+        <PeopleListBlock
+            title={"Researchers"}
+            content={PeopleContent.filter((item) => item.type === "researcher")}
+            id="researchers"
+            fade_direction={"up"}
+        />
+
+        <PeopleListBlock
+            title={"Research Students"}
+            content={PeopleContent.filter((item) => item.type === "student")}
+            id="researchers"
+            fade_direction={"up"}
+        />
 
     </Container>
   );

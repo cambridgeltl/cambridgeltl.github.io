@@ -3,7 +3,6 @@ import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import PeopleContent from "../../content/PeopleContent.json";
-import ProjectContent from "../../content/ProjectContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
@@ -25,17 +24,10 @@ const Research = () => {
       <ContentBlock
         direction="right"
         title={"Research"}
-        content={"LTL is engaged in ongoing projects that aim to advance the field of NLP & AI. Our research focuses on a range of critical issues, and these projects are driven by a team of researchers and students collaborating to explore new approaches and push the boundaries of what NLP technologies can achieve."}
+        content={"LTL is engaged in ongoing projects that aim to advance the field of NLP & AI. Our research focuses on a range of critical issues, and these projects are driven by a divrse team of researchers and students collaborating to explore new approaches and push the boundaries of what NLP technologies can achieve. By leveraging state-of-the-art techniques, we strive to address complex challenges in both academic and real-world contexts, contributing to the broader AI research community."}
         button={[]}
-        icon="project-replace.jpg"
+        icon="ltl_garden_high.jpg"
         id="home"
-        fade_direction={"up"}
-      />
-
-      <PeopleListBlock
-        title={"Active Projects"}
-        content={PeopleContent}
-        id="staff"
         fade_direction={"up"}
       />
 
