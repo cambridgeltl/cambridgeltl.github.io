@@ -4,6 +4,7 @@ export const cardTitleContainerStyle: CSSProperties = {
     display: "flex",
     alignItems: "center",
     gap: "10px",
+    marginBottom: "8px",
 };
 
 export const cardTitleTextStyle: CSSProperties = {
@@ -17,17 +18,14 @@ export const cardStyle: CSSProperties = {
 };
 
 export const contentContainerStyle: CSSProperties = {
-    marginTop: "16px",
+    height: "600px",
+    overflowY: "auto",
+    paddingRight: "8px",
 };
 
-export const imageContainerStyle: CSSProperties = {
-    float: "left",
-    marginRight: "16px",
-    width: "200px",
-    height: "200px",
-};
-
-export const textContainerStyle: CSSProperties = {
+export const scrollContentStyle: CSSProperties = {
+    display: "flex",
+    flexDirection: "column",
 };
 
 export const listGridSettings = {
