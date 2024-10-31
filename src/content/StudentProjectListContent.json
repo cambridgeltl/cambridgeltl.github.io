@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Probing pre-trained language models for specialist knowledge",
+    "abstract": "Knowledge probing is crucial for understanding the knowledge transfer mechanism behind the pre-trained language models (PLMs) [5]. Despite the growing progress of probing knowledge for PLMs in the general domain, specialised areas such as biomedical domain are vastly under-explored. To this end, we have proposed a contrastive probing approach [1] that can well address the multi-token issue existing in the biomedical knowledge probing tasks. And our initial findings [1] indicate that the real lower bound on the amount of factual knowledge encoded by PLMs is higher than we estimated. Meanwhile, prompt-based probing approaches such as AutoPrompt [3], SoftPrompt [4]and OptiPrompt [5] have been investigated for further improving such lower bound with additional labelled data for fine-tuning prompts. In this project, we will continue to analyse and improve our estimation of the lower bound by optimising both the encoding space (e.g. using our self-supervised contrastive learning technique [1]) and the input space (e.g. using the prompt optimising techniques) [2-4].",
+    "references": [
+      {
+        "text": "Zaiqiao Meng, Fangyu Liu, Ehsan Shareghi, Yixuan Su, Charlotte Collins, Nigel Collier. Rewire-then-Probe...",
+        "link": "https://arxiv.org/abs/2110.08173"
+      },
+      {
+        "text": "Taylor Shin, Yasaman Razeghi, Robert L Logan IV, Eric Wallace, and Sameer Singh. Auto-prompt: Eliciting knowledge from language models...",
+        "link": "https://link-to-EMNLP"
+      }
+    ],
+    "contacts": [
+      "Nigel Collier (nhc30@cam.ac.uk)",
+      "Zaiqiao Meng (zm324@cam.ac.uk)"
+    ]
+  },
+  {
+    "title": "Identifying focal geographic locations in news event reports",
+    "abstract": "News event reports contain many location identifiers including the name of the place where the event is occurring, but also other locations such as a victim's country of origin and where they have travelled through, the location of the reporting organisation, the location of agencies, as well as demonyms identifying people involved in the event. Locations are reported at various levels of granularity such as country, province, city and town depending on the assumed readership of the news report. The goals of this work are: (a) to look through a sample of GeoWebNews data (https://github.com/milangritta/Pragmatic-Guide-to-Geoparsing-Evaluation), and to use this to produce a gold standard for evaluation; (b) to survey what is already known about the challenge of identifying location entities (toponyms) in text (e.g. see Milan Gritta's published works as a starting point); (c) to use state of the art tools (e.g. SpaCy, FLAIR) to perform named entity recognition for locations on the document, possibly linking entities to geographic coordinates as an extension; (d) to develop a classifier to identify focal locations for events (if the news report does in fact report an event); (e) to identify categories of errors in the outputs of the state of the art classifier; (f) suggest improved strategies based on what you have learnt.",
+    "references": [
+      {
+        "text": "Gritta, M., Pilehvar, M. T., Limsopatham, N., & Collier, N. (2018). What’s missing in geographical parsing?. Language Resources and Evaluation, 52(2), 603-623.",
+        "link": "https://arxiv.org/abs/2110.08173"
+      },
+      {
+        "text": "Milan Gritta, Milan Stanojevic, and Milan Stanojevic. Geoparsing evaluation: A practical guide to evaluating geoparsing systems...",
+        "link": "https://arxiv.org/abs/2110.08173"
+      }
+    ],
+    "contacts": [
+      "Nigel Collier (nhc30@cam.ac.uk)"
+    ]
+  },
+  {
+    "title": "Reducing human labour cost in named entity recognition with strong and weak data",
+    "abstract": "In this project we look at the problem of learning deep named entity recognition (NER) [1] models using weak supervision, i.e. by using data with no human labels, combined with strong supervision, i.e. data with gold standard human labels. Since high quality human labelling is prohibitively expensive, our goal will be to get the best possible performance in NER using as little of the strongly labelled data combined with weakly labelled data. Weakly labelled data could come from text that has been labelled using dictionaries, Wikipedia links, or some regular expression based approach. Whilst strongly labelled data is expensive to produce, the volume of weakly labelled data is potentially unlimited. Previously it has been found to be difficult to move beyond the performance of strongly labelled data due to the noise introduced in the weak data. However recent efforts in machine learning have shown that it is possible to train a noise-aware loss function that can accommodate potential errors, such as labelling omissions, in the weakly labelled data. The goals of this work could be: (Category B): to produce a strong and weak data in a domain of your interest, to baseline several standard named entity recognition models (e.g. SpaCy) using a combination of strong and weak data to analytically assess the gain/loss in performance, to analyse where gain/loss is happening; (Category A): to take a standard NER data set (e.g. OntoNotes5, WUT-17), to produce weak labels on the same domain of data (e.g. using Wikipedia), to baseline several transformer-based named entity recognition models using a combination of strong and weak data to analytically assess the gain/loss in performance, to analyse where gain/loss is happening; and then to compare performance against a noise-aware method such as NEEDLE [2], NAF [3], or another method of your choice.",
+    "references": [
+      {
+        "text": " Li, J., Sun, A., Han, J., & Li, C. (2020). A survey on deep learning for named entity recognition. IEEE Transactions on Knowledge and Data Engineering.",
+        "link": "https://arxiv.org/abs/2110.08173"
+      },
+      {
+        "text": "Jiang, H., Zhang, D., Cao, T., Yin, B., & Zhao, T. (2021). Named Entity Recognition with Small Strongly Labeled and Large Weakly Labeled Data.",
+        "link": "https://arxiv.org/abs/2106.08977"
+      }
+    ],
+    "contacts": [
+      "Nigel Collier (nhc30@cam.ac.uk)",
+      "Fangyu Liu (fl399@cam.ac.uk)"
+    ]
+  }
+]
