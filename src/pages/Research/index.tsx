@@ -1,12 +1,17 @@
 import { lazy } from "react";
 import PeopleContent from "../../content/PeopleContent.json";
 import PeopleListBlock from "../../components/PeopleListBlock";
+import IntroContent from "../../content/IntroContent.json";
+import ResearchProjectContent from "../../content/ResearchProjectContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 // const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const ProjectBlock = lazy(() => import("../../components/ProjectBlock"));
+
+
 
 const Research = () => {
   return (
@@ -15,19 +20,34 @@ const Research = () => {
       <ContentBlock
         direction="right"
         title={"Research"}
-        content={"LTL is engaged in ongoing projects that aim to advance the field of NLP & AI. Our research focuses on a range of critical issues, and these projects are driven by a team of researchers and students collaborating to explore new approaches and push the boundaries of what NLP technologies can achieve."}
+        content={"The Language Technology Lab is actively engaged in and has completed numerous projects that push the boundaries of what NLP and AI technologies can achieve."}
         button={[]}
-        icon="project-replace.jpg"
-        id="home"
+        icon="earth_small_blue.png"
+        // icon="kings.jpg"
+        id="research"
         fade_direction={"up"}
       />
 
-      <PeopleListBlock
-        title={"Active Projects"}
-        content={PeopleContent}
-        id="staff"
-        fade_direction={"up"}
-      />
+        {ResearchProjectContent.map((project, index) => {
+            const direction = index % 2 === 0 ? "left" : "right"; // Even index: "left", Odd index: "right"
+            const photo = project.photo || "earth_small_blue.png"; // Use default "earth.png" if project.photo is empty
+
+            return (
+                <ProjectBlock
+                    key={project.title} // Add a unique key for better rendering performance
+                    direction={direction}
+                    title={project.title}
+                    content={project.abstract}
+                    people={project.people}
+                    link={project.link}
+                    funder={project.funder}
+                    year={project.year}
+                    icon={photo} // Use the dynamic photo
+                    id={project.title}
+                    fade_direction={"up"}
+                />
+            );
+        })}
 
 
     </Container>

@@ -55,9 +55,9 @@ const Header = ({ t }: { t: TFunction }) => {
         </CustomNavLinkSmall>
 
 
-        <CustomNavLinkSmall onClick={() => history.push("/resource")}>
-          <Span>{t("Resources")}</Span>
-        </CustomNavLinkSmall>
+        {/*<CustomNavLinkSmall onClick={() => history.push("/resource")}>*/}
+        {/*  <Span>{t("Resources")}</Span>*/}
+        {/*</CustomNavLinkSmall>*/}
 
         <CustomNavLinkSmall onClick={() => history.push("/news")}>
           <Span>{t("News & Events")}</Span>

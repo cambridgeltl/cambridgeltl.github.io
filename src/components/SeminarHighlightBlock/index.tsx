@@ -1,21 +1,16 @@
-import {Row, Col, Badge, Card, Tag, Tooltip} from "antd";
+import {Col, Badge, Card, Tooltip} from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-
 import { SeminarHighlightBlockType } from "./types";
 import { Button } from "../../common/Button";
-import { SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
   Content,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
   StyledRow,
   ButtonWrapper, StyledTitle, StyledContent
 } from "./styles";
-import {Photo} from "../../common/Photo";
+
 import {useState} from "react";
 
 const SeminarHighlightBlock = ({
@@ -53,6 +48,9 @@ const SeminarHighlightBlock = ({
   return (
     <ContentSection>
       <Fade direction={fade_direction}  triggerOnce>
+          <div>
+
+
         <StyledRow
           justify="space-between"
           align="middle"
@@ -71,7 +69,6 @@ const SeminarHighlightBlock = ({
                     <StyledTitle style={{ maxWidth: "90%" }}>{highlight_seminar.title}</StyledTitle>
 
 
-                    {/*<StyledTitle>{"Title: " + highlight_seminar.title}</StyledTitle>*/}
                     <Tooltip placement="right"   color={"#18216d"}  title={highlight_seminar.bio}
                              overlayStyle={{ maxWidth: "900px" }}  // Set the width or maxWidth
                             showArrow={false}
@@ -94,27 +91,18 @@ const SeminarHighlightBlock = ({
                     )}
 
 
-                    {/* Abstract Section with a button */}
                     <StyledContent>
                         {showFullAbstract && (
                             "Abstract: " + highlight_seminar.abstract)
                         }
                     </StyledContent>
 
-                    {/* Button to toggle abstract */}
                     <ButtonWrapper>
 
-                    {/*<Button*/}
-                    {/*    onClick={toggleAbstract}*/}
-                    {/*    // style={{ marginTop: "10px", backgroundColor: "#18216d", color: "#fff" }}*/}
-                    {/*>*/}
-                    {/*    {showFullAbstract ? "Show Less" : "Show Abstract"}*/}
-                    {/*</Button>*/}
 
 
                         {highlight_seminar.link && (
                             <Button
-                                // color={"#fff"}
 
                                 onClick={() => window.open(highlight_seminar.link, "_blank")}  // Open link in a new tab
                             >
@@ -123,15 +111,6 @@ const SeminarHighlightBlock = ({
                         )}
                     </ButtonWrapper>
 
-                    {/* Toggle Button for Show More/Show Less */}
-
-
-
-
-
-
-                    {/*<Tag >bio</Tag>*/}
-                    {/*<StyledContent>{(highlight_seminar.bio)}</StyledContent>*/}
                 </Card>
               </Badge.Ribbon>
 
@@ -150,6 +129,9 @@ const SeminarHighlightBlock = ({
 
           </Col>
         </StyledRow>
+
+          </div>
+
       </Fade>
     </ContentSection>
   );

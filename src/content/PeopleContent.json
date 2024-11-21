@@ -264,6 +264,30 @@
     "photo": "cecilia.jpeg",
     "position": "ELLIS PhD Student",
     "link": "https://ccliu2.github.io"
+  },
+  {
+    "type": "administrator",
+    "name": "Claire Letellier",
+    "title": "Ms",
+    "photo": "",
+    "position": "Project Administrator",
+    "link": ""
+  },
+  {
+    "type": "alumni",
+    "name": "Paweł Budzianowski",
+    "title": "Dr",
+    "photo": "pawel.jpg",
+    "position": "CTO and Co-Founder at K-Scale Labs",
+    "link": "https://budzianowski.github.io/"
+  },
+  {
+    "type": "alumni",
+    "name": "Billy Chiu",
+    "title": "Dr",
+    "photo": "billy.jpeg",
+    "position": "Assistant professor at Lingnan University",
+    "link": "https://billy322.github.io"
   }
 ]
 

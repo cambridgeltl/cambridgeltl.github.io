@@ -10,6 +10,7 @@ interface MiddleBlockProps {
   title: string;
   content: string;
   button: string;
+  url: string;
   t: TFunction;
 }
 
@@ -19,7 +20,7 @@ interface SocialLinkProps {
 }
 
 
-const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
+const MiddleBlock = ({ title, content, button, url, t }: MiddleBlockProps) => {
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -50,7 +51,13 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button name="submit"
+                        // onClick={() => scrollTo("mission")}
+                        onClick={() => window.open(url, '_blank')}  // Conditionally apply the onClick event
+
+                >
+                  {/**/}
+
                   {t(button)}
                 </Button>
               )}

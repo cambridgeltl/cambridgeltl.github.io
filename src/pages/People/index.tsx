@@ -54,6 +54,21 @@ const People = () => {
             fade_direction={"up"}
         />
 
+        <PeopleListBlock
+            title={"Administrators"}
+            content={PeopleContent.filter((item) => item.type === "administrator")}
+            id="administrators"
+            fade_direction={"up"}
+        />
+
+        <PeopleListBlock
+            title={"Alumni"}
+            content={PeopleContent.filter((item) => item.type === "alumni")}
+            id="alumni"
+            fade_direction={"up"}
+        />
+
+
 
         {/*<M*/}
 

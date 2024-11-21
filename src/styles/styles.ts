@@ -77,6 +77,9 @@ export const Styles = createGlobalStyle`
         line-height: 1.41;
     }
 
+
+
+
     h1 {
         font-weight: 600;
     }

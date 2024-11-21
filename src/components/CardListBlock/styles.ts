@@ -13,69 +13,60 @@ export const ContentSection = styled("section")`
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
-// Styled Row
+
 export const StyledRow = styled(Row)<{ direction: string }>`
   flex-direction: ${({ direction }) =>
-          direction === "left" ? "row" : "row-reverse"};
+    direction === "left" ? "row" : "row-reverse"};
   display: flex;
-  align-items: center; // Ensure vertical alignment
+  align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column; // Stack items on smaller screens
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-// Content Wrapper (for Title)
 export const ContentWrapper = styled("div")`
   display: flex;
   flex-direction: column;
-  justify-content: center; // Vertically center content
-  height: 100%; // Optional: set to ensure it takes up the full height
-  text-align: left; // Align text to the left
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center; // Center-align text on smaller screens
+    margin-bottom: 2rem; // Add spacing between stacked items
+  }
 `;
 
-// Button Wrapper (for Button Alignment)
 export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; // Ensure button wrapper takes full height for vertical alignment
+  height: 100%;
+
   button {
     margin: 0 auto;
   }
-`;
 
-export const ServiceWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-`;
-
-export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  text-transform: uppercase;
-  color: #000;
-  font-family: "Motiva Sans Light", sans-serif;
-`;
-
-export const MinPara = styled("p")`
-  font-size: 13px;
+  @media only screen and (max-width: 768px) {
+    display: none; // Hide the button on screens smaller than 768px
+  }
 `;
 
 
 export const StyledTitle = styled("h6")`
-  font-size: 50px; // Adjust this value to match the button size
+  font-size: 50px;
   margin: 0;
-  font-weight: normal; // Adjust if needed to match the button
+  font-weight: normal;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px; // Reduce title size on smaller screens
+  }
 `;
 
-
-// export const CardPhoto = styled.img`
-//   width: 100%;  // Ensures the image takes full width of the card
-//   height: 200px;  // A fixed height to ensure all images are the same height
-//   object-fit: cover;  // Ensures the image covers the space while maintaining its aspect ratio
-//   object-position: center;  // Ensures the image is centered
-//   border-radius: 5px;  // Optional: add some border-radius for styling
-// `;
 
 interface PhotoProps {
     width?: string;
