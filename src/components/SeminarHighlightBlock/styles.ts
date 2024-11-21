@@ -14,10 +14,18 @@ export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
 `;
 
-export const StyledRow = styled(Row)`
-  flex-direction: ${({ direction }: { direction: string }) =>
+
+export const StyledRow = styled(Row)<{ direction: string }>`
+  flex-direction: ${({ direction }) =>
     direction === "left" ? "row" : "row-reverse"};
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column; // Stack columns vertically for smaller screens
+    justify-content: center;
+    align-items: center;
+  }
 `;
+
 
 export const ContentWrapper = styled("div")`
   position: relative;
@@ -40,6 +48,7 @@ export const MinTitle = styled("h6")`
   padding: 0.5rem 0;
   text-transform: uppercase;
   color: #000;
+  
   font-family: "Motiva Sans Light", sans-serif;
 `;
 

@@ -59,9 +59,9 @@ const PeopleListBlock = ({
           </StyledRow>
 
           <StyledRow  id={id}  direction={"left"}
-                      style={{ marginTop: "0px", marginRight: "60px" }}  // Adds space above the second row
+                      style={{ marginTop: "0px", marginRight: "60px" }}
 
-                      gutter={5}>
+                      gutter={4}>
             {content.map((item, index) => (
                 <Col span={6}>
 
@@ -72,6 +72,8 @@ const PeopleListBlock = ({
                         height: 330,
                         marginTop : 20,
                       }}
+                      onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
+
                       // cover={<Photo src={item.photo} width="100%" height="100%" alt={item.title} />}
                       cover={
                         item.photo ? (
@@ -80,7 +82,7 @@ const PeopleListBlock = ({
                                 width="100%"
                                 height="200px"
                                 alt={item.title}
-                                onClick={() => window.open(item.link, '_blank')}  // Open link in a new tab
+                                // onClick={() => window.open(item.link, '_blank')}  // Open link in a new tab
                             />
                         ) : (
                             <Avatar
@@ -88,13 +90,12 @@ const PeopleListBlock = ({
                                 size={200}
                                 icon={<UserOutlined />}
                                 style={{ width: '100%', height: '200px' }}  // Adjust to match the dimensions of the CardPhoto
-                                onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
+                                // onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
 
                             />
                         )
                       }
                   >
-                    {/*item.title + " " +*/}
                     <Meta
                         title={
                           <div style={{ fontWeight: "bold", whiteSpace: "normal", wordWrap: "break-word" }}>
@@ -109,73 +110,6 @@ const PeopleListBlock = ({
 
           </StyledRow>
 
-
-
-          {/*<StyledRow*/}
-          {/*    justify="space-between"*/}
-          {/*    align="middle"*/}
-          {/*    id={id}*/}
-          {/*    direction={"left"}*/}
-          {/*    style={{*/}
-          {/*      marginTop : 50,*/}
-          {/*    }}*/}
-          {/*>*/}
-          {/*  /!* Left Column for the Title *!/*/}
-          {/*  <Col lg={11} md={11} sm={11} xs={24}>*/}
-          {/*    <ContentWrapper>*/}
-          {/*      <StyledTitle>{"Researchers"}</StyledTitle>*/}
-          {/*    </ContentWrapper>*/}
-          {/*  </Col>*/}
-          {/*</StyledRow>*/}
-
-          {/*<StyledRow  id={id}  direction={"left"}*/}
-          {/*            style={{ marginTop: "0px", marginRight: "60px" }}  // Adds space above the second row*/}
-
-          {/*            gutter={5}>*/}
-          {/*  {content.filter((item) => item.type === "researcher").map((item, index) => (*/}
-          {/*      <Col span={6}>*/}
-
-          {/*        <Card*/}
-          {/*            hoverable*/}
-          {/*            style={{*/}
-          {/*              width: 200,*/}
-          {/*              height: 300,*/}
-          {/*              marginTop : 20,*/}
-          {/*            }}*/}
-          {/*            // cover={<Photo src={item.photo} width="100%" height="100%" alt={item.title} />}*/}
-          {/*            cover={*/}
-          {/*              item.photo ? (*/}
-          {/*                  <CardPhoto*/}
-          {/*                      src={`/img/photo/${item.photo}`}*/}
-          {/*                      width="100%"*/}
-          {/*                      height="200px"*/}
-          {/*                      alt={item.title}*/}
-          {/*                      onClick={() => window.open(item.link, '_blank')}  // Open link in a new tab*/}
-          {/*                  />*/}
-          {/*              ) : (*/}
-          {/*                  <Avatar*/}
-          {/*                      shape="square"*/}
-          {/*                      size={200}*/}
-          {/*                      icon={<UserOutlined />}*/}
-          {/*                      style={{ width: '100%', height: '200px' }}  // Adjust to match the dimensions of the CardPhoto*/}
-          {/*                  />*/}
-          {/*              )*/}
-          {/*            }*/}
-          {/*        >*/}
-          {/*          /!*item.title + " " +*!/*/}
-          {/*          <Meta*/}
-          {/*              title={*/}
-          {/*                <div style={{ fontWeight: "bold", whiteSpace: "normal", wordWrap: "break-word" }}>*/}
-          {/*                  {item.name}*/}
-          {/*                </div>*/}
-          {/*              }*/}
-          {/*              description={item.position}*/}
-          {/*          />*/}
-          {/*        </Card>*/}
-          {/*      </Col>*/}
-          {/*  ))}*/}
-
-          {/*</StyledRow>*/}
         </div>
 
 

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Towards Globally Equitable Language Technologies",
+    "year" : "2023-2028",
+    "photo": "girl.jpg",
+    "abstract": "Natural Language Processing technology is yet not distributed equally and is available only for a small part of the world's people, mainly those living in the Global North. This is due to the scarcity of resources needed to develop NLP for the majority of our over 7,000 living languages. In this project, we aim to establish an approach to NLP that prioritises global fairness and inclusivity.",
+    "link" : "https://gtr.ukri.org/projects?ref=EP%2FY031350%2F1",
+    "funder" : "ERC Advanced / UKRI Frontier Grant",
+    "people": [
+      {
+        "name": "Anna Korhonen",
+        "position": "PI",
+        "link": "https://sites.google.com/site/annakorhonen/"
+      }
+    ]
+  },
+  {
+    "title": "EPI-AI: Automated Understanding and Alerting of Disease Outbreaks from Global News Media",
+    "year" : "2020-2024",
+    "photo": "",
+    "abstract": "The EPI-AI project aims to achieve a step change in automated global epidemic alerting using news media monitoring. Teams at McGill and Cambridge universities, in collaboration with national and international public health agencies, are adopting an interdisciplinary approach that combines natural language processing, epidemiology, biomedical informatics and bioethics to address this complex task.",
+    "link" : "https://gtr.ukri.org/projects?ref=ES/T012277/1",
+    "funder" : "ESRC",
+    "people": [
+      {
+        "type": "internal",
+        "name": "Nigel Collier",
+        "photo": "nigel.jpg",
+        "position": "Principal Investigator",
+        "affiliation": "University of Cambridge",
+        "link": "https://sites.google.com/site/nhcollier/"
+      }
+    ]
+  }
+]
