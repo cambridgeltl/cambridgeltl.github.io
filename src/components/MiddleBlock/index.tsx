@@ -9,8 +9,8 @@ import {SvgIcon} from "../../common/SvgIcon";
 interface MiddleBlockProps {
   title: string;
   content: string;
-  button: string;
-  url: string;
+  button?: string;
+  url?: string;
   t: TFunction;
 }
 
@@ -21,20 +21,6 @@ interface SocialLinkProps {
 
 
 const MiddleBlock = ({ title, content, button, url, t }: MiddleBlockProps) => {
-
-  const SocialLink = ({ href, src }: SocialLinkProps) => {
-    return (
-        <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={src}
-            aria-label={src}
-        >
-          <SvgIcon src={src} width="20px" height="20px" />
-        </a>
-    );
-  };
 
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;

@@ -1,11 +1,8 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
-import AboutContent from "../../content/AboutContent.json";
 import HighlightContent from "../../content/HighlightContent.json";
-import MissionContent from "../../content/MissionContent.json";
-import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
+
 import CardListBlock from "../../components/CardListBlock";
 import SeminarHighlightBlock from "../../components/SeminarHighlightBlock";
 import SeminarContent from "../../content/SeminarContent.json";
@@ -36,15 +33,17 @@ const Home = () => {
         content={HighlightContent}
         id="highlight"
         fade_direction={"up"}
+        button={{ link: "/news", title: "More Highlights" }}
       />
 
 
       <SeminarHighlightBlock
-        title={"Next LTL Seminar"}
+        title={"LTL Seminars"}
         content={SeminarContent}
         id="seminar"
         direction={"left"}
         fade_direction={"up"}
+        instruction={"LTL seminars are held every Thursday during term time, either in person at the English Faculty Building or online. Some in-person seminars may also offer a hybrid option for remote participation. We welcome attendees from the University and the wider public."}
 
       />
 

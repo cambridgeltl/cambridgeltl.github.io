@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 2rem 0 8rem;
+  padding: 0rem 0 8rem;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
@@ -11,9 +11,7 @@ export const ContentSection = styled("section")`
 `;
 
 export const Content = styled("p")`
-  margin: 1rem 0 1rem 0;
-  color: #000000;
-
+  margin: 1.5rem 0 2rem 0;
 `;
 
 export const StyledRow = styled(Row)<{ direction: string }>`
@@ -21,7 +19,7 @@ export const StyledRow = styled(Row)<{ direction: string }>`
     direction === "left" ? "row" : "row-reverse"};
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column; // Stack items on smaller screens
@@ -60,44 +58,29 @@ export const ButtonWrapper = styled("div")`
 
 
 export const StyledTitle = styled("h6")`
-  margin: 1rem 0 1rem 0;
   font-size: 20px;
+  margin: 0;
   font-weight: normal;
+  padding: 0rem 0 0rem;
 
   @media only screen and (max-width: 768px) {
-    font-size: 30px; // Reduce title size on smaller screens
+    font-size: 20px; // Reduce title size on smaller screens
   }
 `;
 
 
-
-export const ReferenceText = styled("p")`
+export const StyledDate = styled("p")`
   font-size: 18px;
   margin: 0;
   font-weight: normal;
   color: #bababa;
-  //color: gray;
-
-  //color: #18216d;
-  
-  @media only screen and (max-width: 768px) {
-    font-size: 18px; // Reduce title size on smaller screens
-  }
-`;
-
-
-
-export const StyledReferenceItem = styled("li")`
-  font-size: 18px;
-  margin: 0;
-  font-weight: normal;
-  color: #808080;
-  //color: #18216d;
+  padding: 0rem 0 0rem;
 
   @media only screen and (max-width: 768px) {
     font-size: 18px; // Reduce title size on smaller screens
   }
 `;
+
 
 
 interface PhotoProps {
@@ -112,4 +95,14 @@ export const CardPhoto = styled.img<PhotoProps>`
   object-fit: cover;  // Maintain aspect ratio and cover the given area
   object-position: center;  // Center the image
   border-radius: 5px;  // Optional: add some border-radius
+`;
+
+
+export const StyledAbstract = styled("p")`
+  font-size: 18px; // Adjust this value to match the button size
+  color: #000;
+  padding: 0rem 0 0.2rem;
+
+  margin: 0;
+  font-weight: normal; // Adjust if needed to match the button
 `;

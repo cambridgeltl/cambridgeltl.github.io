@@ -1,5 +1,4 @@
 import { lazy } from "react";
-import ProjectListBlock from "../../components/ProjectListBlock";
 import StudentProjectCategoryBlock from "../../components/StudentProjectCategoryBlock";
 import StudentProjectListBlock from "../../components/StudentProjectListBlock";
 import StudentProjectListContent from "../../content/StudentProjectListContent.json";
