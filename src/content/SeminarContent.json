@@ -1,9 +1,9 @@
 [
-
   {
     "type": "seminar",
     "title": "Generative AI for Science",
     "speaker": "Greg Durrett",
+    "affiliation": "UT Austin Computer Science",
     "link": "https://cam-ac-uk.zoom.us/j/97599459216?pwd=QTRsOWZCOXRTREVnbTJBdXVpOXFvdz09",
     "venue": "online",
     "place": "",
@@ -16,6 +16,7 @@
     "type": "seminar",
     "title": "Generative AI for Science",
     "speaker": "James Zou",
+    "affiliation": "Stanford University",
     "link": "https://cam-ac-uk.zoom.us/j/97599459216?pwd=QTRsOWZCOXRTREVnbTJBdXVpOXFvdz09",
     "venue": "online",
     "place": "",
@@ -28,20 +29,9 @@
     "type": "seminar",
     "title": "Practical and Specialised NLP Solutions: The Case of Social Media",
     "speaker": "Jose Camacho-Collados",
+    "affiliation": "Cardiff University.",
     "link": "https://cam-ac-uk.zoom.us/j/97599459216?pwd=QTRsOWZCOXRTREVnbTJBdXVpOXFvdz09",
     "venue": "hybrid",
-    "place": "Room SR-24 in the English Faculty Building",
-    "date": "Thursday, 30 May 2024",
-    "time": "3 pm - 4 pm",
-    "abstract" : "Large generative language models (LLMs) are currently ubiquitous in NLP research. However, when it comes to specific applications, these powerful models are often impractical and not always the optimal choice, and there may be more adequate solutions for specific problems. In this talk, I will advocate for practical and effective solutions in NLP. I will try to revisit the importance of high-quality data (including labelled data) and reliable evaluation benchmarks in the current LLM landscape. Using social media as a case study, I will explain some of the challenges arising from processing content in these platforms. The multilingual, dynamic, informal and multimodal nature of social media, as well as the constant influx of new content, means that standard techniques are seldom optimal, and specialised models are often required.",
-    "bio" : "Jose Camacho-Collados is a Professor at Cardiff University, leading the Cardiff NLP group. Before joining Cardiff University, he completed his PhD in Sapienza University of Rome and was a Google AI PhD Fellow. Until recently, his research has focused on various semantics aspects in NLP with a distributional perspective. He wrote the “Embeddings in Natural Language Processing\" book and is the General Chair of *SEM 2024. More related to the topic of the talk, in the last few years Jose has been working in social media analysis and applications, developing NLP tools specifically targeted to this domain."
-  },
-  {
-    "type": "seminar",
-    "title": "Practical and Specialised NLP Solutions: The Case of Social Media",
-    "speaker": "Jose Camacho-Collados",
-    "link": "",
-    "venue": "in-person",
     "place": "Room SR-24 in the English Faculty Building",
     "date": "Thursday, 30 May 2024",
     "time": "3 pm - 4 pm",

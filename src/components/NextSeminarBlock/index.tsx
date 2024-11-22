@@ -1,31 +1,30 @@
 import {Col, Badge, Card, Tooltip} from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
-import { SeminarHighlightBlockType } from "./types";
+import { SeminarNextBlockType } from "./types";
 import { Button } from "../../common/Button";
 import {
-  ContentSection,
-  Content,
-  ContentWrapper,
-  StyledRow,
-  ButtonWrapper, StyledTitle, StyledContent
+    ContentSection,
+    Content,
+    ContentWrapper,
+    StyledRow,
+    ButtonWrapper, StyledTitle, StyledContent, StyledUnderline, StyledAbstract
 } from "./styles";
 
 import {useState} from "react";
 
-const SeminarHighlightBlock = ({
+const SeminarNextBlock = ({
      title,
-     content = [],
+     content,
      instruction,
      button,
      t,
      id,
      direction,
      fade_direction,
-}: SeminarHighlightBlockType) => {
+}: SeminarNextBlockType) => {
 
 
-  const highlight_seminar = content.length > 0 ? content[1] : null;
     // State to handle abstract toggle
     const [showFullAbstract, setShowFullAbstract] = useState(false);
 
@@ -55,51 +54,58 @@ const SeminarHighlightBlock = ({
           <Col lg={12} md={11} sm={12} xs={24}>
 
             <ContentWrapper>
-              {highlight_seminar && (
 
-              <Badge.Ribbon text={highlight_seminar.venue}>
+              <Badge.Ribbon text={content.venue}>
                 <Card size="small">
 
 
-                    <StyledTitle style={{ maxWidth: "90%" }}>{highlight_seminar.title}</StyledTitle>
+                    <StyledTitle style={{ maxWidth: "90%" }}>{content.title}</StyledTitle>
 
 
-                    <Tooltip placement="right"   color={"#18216d"}  title={highlight_seminar.bio}
+                    <Tooltip placement="right"   color={"#18216d"}  title={content.bio}
                              overlayStyle={{ maxWidth: "900px" }}  // Set the width or maxWidth
                             showArrow={false}
-                    >                    <StyledContent>
+                    >
+                        <StyledContent>
 
-                        {(highlight_seminar.speaker + " (" + highlight_seminar.affiliation + ")")}
+                    {(content.speaker + " (" + content.affiliation + ")")}
                     </StyledContent>
-
                 </Tooltip>
                     <StyledContent>
-                        {(highlight_seminar.time + ", " + highlight_seminar.date)}
+                        {(content.time + ", " + content.date)}
                     </StyledContent>
 
 
 
-                    {highlight_seminar.place && (
+                    {content.place && (
                         <StyledContent>
-                            {("Where: " + highlight_seminar.place)}
+                            {(content.place)}
                         </StyledContent>
                     )}
-
-
-                    <StyledContent>
+                    <br/>
+                    {!showFullAbstract && (
+                        <div>
+                            <StyledAbstract>
+                                {"Abstract: " + truncateText(content.abstract, 200)}
+                            </StyledAbstract>
+                            <StyledUnderline onClick={() =>  toggleAbstract()}>{"Find more..."}</StyledUnderline>
+                        </div>
+                        )
+                    }
+                    <StyledAbstract>
                         {showFullAbstract && (
-                            "Abstract: " + highlight_seminar.abstract)
+                            "Abstract: " + content.abstract)
                         }
-                    </StyledContent>
+                    </StyledAbstract>
 
                     <ButtonWrapper>
 
 
 
-                        {highlight_seminar.link && (
+                        {content.link && (
                             <Button
 
-                                onClick={() => window.open(highlight_seminar.link, "_blank")}  // Open link in a new tab
+                                onClick={() => window.open(content.link, "_blank")}  // Open link in a new tab
                             >
                                 Join Zoom Meeting
                             </Button>
@@ -112,7 +118,7 @@ const SeminarHighlightBlock = ({
 
 
 
-              )}
+
             </ContentWrapper>
 
           </Col>
@@ -132,4 +138,4 @@ const SeminarHighlightBlock = ({
   );
 };
 
-export default withTranslation()(SeminarHighlightBlock);
+export default withTranslation()(SeminarNextBlock);

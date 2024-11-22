@@ -1,7 +1,7 @@
 import { TFunction } from "react-i18next";
-export interface SeminarHighlightBlockType {
+export interface SeminarNextBlockType {
     title: string;
-    content?: {
+    content: {
         type: string;
         title: string;
         speaker: string;
@@ -10,10 +10,11 @@ export interface SeminarHighlightBlockType {
         place: string;
         date: string;
         time: string;
-        affiliation: string;
         abstract: string;
         bio: string;
-    }[];
+        affiliation: string;
+
+    };
     instruction: string;
     button?: (
         | {

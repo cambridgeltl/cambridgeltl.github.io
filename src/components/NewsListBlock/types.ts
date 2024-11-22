@@ -1,5 +1,5 @@
 import { TFunction } from "react-i18next";
-export interface CardListBlockProps {
+export interface NewsListBlockProps {
   title: string;
   content?: {
     type: string;

@@ -61,6 +61,7 @@ export const StyledTitle = styled("h6")`
   font-size: 50px;
   margin: 0;
   font-weight: normal;
+  padding: 0rem 0 2rem;
 
   @media only screen and (max-width: 768px) {
     font-size: 30px; // Reduce title size on smaller screens

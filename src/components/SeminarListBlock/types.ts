@@ -1,7 +1,6 @@
 import { TFunction } from "react-i18next";
-export interface SeminarHighlightBlockType {
-    title: string;
-    content?: {
+export interface SeminarListBlockType {
+    upcoming_talks: {
         type: string;
         title: string;
         speaker: string;
@@ -14,18 +13,19 @@ export interface SeminarHighlightBlockType {
         abstract: string;
         bio: string;
     }[];
-    instruction: string;
-    button?: (
-        | {
+    completed_talks: {
+        type: string;
         title: string;
-        color?: undefined;
-    }
-        | {
-        title: string;
-        color: string;
-    }
-        );
-
+        speaker: string;
+        link: string;
+        venue: string;
+        place: string;
+        date: string;
+        time: string;
+        affiliation: string;
+        abstract: string;
+        bio: string;
+    }[];
     t: TFunction;
     id: string;
     direction: "left" | "right";

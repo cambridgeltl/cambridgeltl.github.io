@@ -10,7 +10,7 @@
   {
     "type": "events",
     "title": "LTL @ EMNLP 2023",
-    "text": "Please find attached a selection of group photos of LTL at the EMNLP 2023 Conference in Singapore!",
+    "text": "Please find attached a selection of group photos of LTL at the EMNLP 2023 Conference in Singapore! ",
     "photo": "ltl_emnlp_group.jpg",
     "link": "",
     "date": "2023-12-09"
@@ -24,19 +24,11 @@
     "date": "2021-08-02"
   },
   {
-    "type": "events",
+    "type": "news",
     "title": "LTL Welcome Party",
-    "text": "Welcome our new incoming students to join LTL!",
+    "text": "Welcome our new incoming students to join LTL! Welcome our new incoming students to join LTL!",
     "photo": "people_small.jpg",
     "link": "",
     "date": "2024-10-01"
-  },
-  {
-    "type": "events",
-    "title": "LTL Halloween Party",
-    "text": "What a fun night at our Halloween party have a look at the pumpkin carving competition entries!",
-    "photo": "halloween.jpeg",
-    "link": "https://x.com/CambridgeLTL/status/1587754105191239680",
-    "date": "2021-08-02"
   }
 ]

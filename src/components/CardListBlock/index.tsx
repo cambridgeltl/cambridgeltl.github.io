@@ -11,6 +11,7 @@ import {
   StyledTitle,
   CardPhoto,
 } from "./styles";
+import {useHistory} from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -22,7 +23,9 @@ const CardListBlock = ({
                          id,
                          fade_direction,
                        }: CardListBlockProps) => {
-  return (
+    const history = useHistory();
+
+    return (
       <ContentSection>
         <Fade direction={fade_direction} triggerOnce>
           <div>
@@ -36,9 +39,18 @@ const CardListBlock = ({
 
             {/* Right Column for the Button */}
             <Col lg={4} md={12} sm={24} xs={24}>
-              <ButtonWrapper>
-                <Button key={"learn_more"}>{"More " + title}</Button>
-              </ButtonWrapper>
+                {button && (
+                    <ButtonWrapper>
+                      <Button key={"learn_more"}
+                              onClick={() => history.push(button.link)}
+                      >
+                        {button.title}
+                      </Button>
+                    </ButtonWrapper>
+                )}
+              {/*<ButtonWrapper>*/}
+              {/*  <Button key={"learn_more"}>{button?.title}</Button>*/}
+              {/*</ButtonWrapper>*/}
             </Col>
           </StyledRow>
 
