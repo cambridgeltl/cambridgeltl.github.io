@@ -73,12 +73,17 @@ const CardListBlock = ({
                   <Card
                       hoverable
                       cover={
-                        <CardPhoto
-                            src={`/img/photo/${item.photo}`}
-                            width="100%"
-                            height="250px"
-                            alt={item.title}
-                        />
+                          <CardPhoto
+                              src={
+                                  item.photo
+                                      ? `${process.env.PUBLIC_URL}/img/photo/${item.photo}`
+                                      : `${process.env.PUBLIC_URL}/img/photo/default.jpg` // Fallback image
+                              }
+                              width="100%"
+                              height="250px"
+                              alt={item.title || "Default Photo"}
+                          />
+
                       }
                   >
                     <Meta title={item.title} description={item.date} />

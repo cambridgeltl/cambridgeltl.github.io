@@ -4,10 +4,15 @@ import { ImageProps } from "../types";
 
 export const Photo = ({ src, width, height, alt }: ImageProps) => (
     <img
-        src={`/img/photo/${src}`} // Adjusted the path to work for all image types
-        alt={alt || src} // Uses provided alt text or falls back to src if none is provided
+        src={`${process.env.PUBLIC_URL}/img/photo/${src}`}
+        alt={alt || src}
         width={width}
         height={height}
-        style={{ maxWidth: "100%", height: "auto" }} // Ensures responsiveness
+        style={{ maxWidth: "100%", height: "auto" }}
+        onError={(e) => {
+            e.currentTarget.src = `${process.env.PUBLIC_URL}/img/photo/fallback.png`;
+            e.currentTarget.alt = "Image not found";
+        }}
     />
+
 );

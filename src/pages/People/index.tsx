@@ -29,11 +29,18 @@ const People = () => {
       />
 
       <PeopleListBlock
-        title={"Academic Staff"}
+        title={"Academic Staffs"}
         content={PeopleContent.filter((item) => item.type === "academic staff")}
         id="staff"
         fade_direction={"up"}
       />
+
+        <PeopleListBlock
+            title={"Affiliated Lecturers"}
+            content={PeopleContent.filter((item) => item.type === "affiliated lecturer")}
+            id="affiliated staff"
+            fade_direction={"up"}
+        />
 
 
         <PeopleListBlock
@@ -51,6 +58,14 @@ const People = () => {
         />
 
         <PeopleListBlock
+            title={"Visiting ELLIS Students"}
+            content={PeopleContent.filter((item) => item.type === "ellis student")}
+            id="ellis student"
+            fade_direction={"up"}
+        />
+
+
+        <PeopleListBlock
             title={"Administrators"}
             content={PeopleContent.filter((item) => item.type === "administrator")}
             id="administrators"
@@ -62,6 +77,7 @@ const People = () => {
             content={PeopleContent.filter((item) => item.type === "alumni")}
             id="alumni"
             fade_direction={"up"}
+            show_photo={false}
         />
 
 

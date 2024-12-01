@@ -59,7 +59,7 @@ const NewsListBlock = ({
                                   hoverable
                                   cover={
                                       <CardPhoto
-                                          src={`/img/photo/${item.photo}`}
+                                          src={`${process.env.PUBLIC_URL}/img/photo/${item.photo}`} // Ensures compatibility with non-root deployments
                                           width="100%"
                                           height="250px"
                                           alt={item.title}

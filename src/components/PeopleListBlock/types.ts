@@ -24,4 +24,5 @@ export interface PeopleBlockProps {
   t: TFunction;
   id: string;
   fade_direction: "bottom-left" | "bottom-right" | "down" | "left" | "right" | "top-left" | "top-right" | "up";
+    show_photo?: boolean;
 }

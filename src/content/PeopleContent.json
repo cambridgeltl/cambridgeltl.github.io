@@ -3,7 +3,7 @@
     "type": "academic staff",
     "name": "Anna Korhonen",
     "title": "Professor",
-    "photo": "anna.jpg",
+    "photo": "anna_photo.jpg",
     "position": "Co-head of LTL, Professor of Natural Language Processing",
     "link": "https://sites.google.com/site/annakorhonen/"
   },
@@ -11,27 +11,27 @@
     "type": "academic staff",
     "name": "Nigel Collier",
     "title": "Professor",
-    "photo": "nigel.jpg",
+    "photo": "nigel_new_photo.jpg",
     "position": "Co-head of LTL, Professor of Natural Language Processing",
     "link": "https://sites.google.com/site/nhcollier/"
 
   },
   {
     "type": "academic staff",
-    "name": "Theodora Alexopoulou",
+    "name": "Ivan Vulić",
     "title": "Dr",
-    "photo": "dora.jpg",
-    "position": "Assistant Professor",
-    "link": "https://www.mmll.cam.ac.uk/ta259"
-
+    "photo": "ivan.jpg",
+    "position": "Principal Research Associate, Royal Society University Research Fellowship",
+    "link": "https://sites.google.com/site/ivanvulic/"
   },
   {
     "type": "academic staff",
-    "name": "Marco Basaldella",
+    "name": "Theodora Alexopoulou",
     "title": "Dr",
-    "photo": "marco.jpeg",
-    "position": "Affiliated Lecturer",
-    "link": "https://basaldella.it/"
+    "photo": "dora_new_photo.jpg",
+    "position": "Associate Professor",
+    "link": "https://www.mmll.cam.ac.uk/ta259"
+
   },
   {
     "type": "academic staff",
@@ -42,39 +42,23 @@
     "link": "https://www.mmll.cam.ac.uk/dr-marieke-meelen"
   },
   {
-    "type": "academic staff",
-    "name": "Thierry Poibeau",
+    "type": "affiliated lecturer",
+    "name": "Marco Basaldella",
     "title": "Dr",
-    "photo": "arton232.jpg",
+    "photo": "marco.jpeg",
     "position": "Affiliated Lecturer",
-    "link": "https://www.lattice.cnrs.fr/en/members/direction/thierry-poibeau/?lang=fr"
+    "link": "https://basaldella.it/"
   },
   {
-    "type": "academic staff",
-    "name": "Edoardo Ponti",
+    "type": "affiliated lecturer",
+    "name": "Haim Dubossarsky",
     "title": "Dr",
-    "photo": "edo.jpeg",
+    "photo": "haim.jpg",
     "position": "Affiliated Lecturer",
-    "link": "https://ducdauge.github.io/"
+    "link": "https://www.qmul.ac.uk/eecs/people/profiles/haim-dubossarsky.html"
   },
   {
-    "type": "academic staff",
-    "name": "Roi Reichart",
-    "title": "Professor",
-    "photo": "roi.webp",
-    "position": "Affiliated Lecturer",
-    "link": "https://roireichart.com/"
-  },
-  {
-    "type": "academic staff",
-    "name": "Ehsan Shareghi",
-    "title": "Dr",
-    "photo": "ehsan.jpg",
-    "position": "Affiliated Lecturer",
-    "link": "https://www.lattice.cnrs.fr/en/members/direction/thierry-poibeau/?lang=fr"
-  },
-  {
-    "type": "academic staff",
+    "type": "affiliated lecturer",
     "name": "Zaiqiao Meng",
     "title": "Dr",
     "photo": "zaiqiao.jpg",
@@ -82,12 +66,61 @@
     "link": "https://www.gla.ac.uk/schools/computing/staff/zaiqiaomeng/"
   },
   {
+    "type": "affiliated lecturer",
+    "name": "Mohammad Taher Pilehvar",
+    "title": "Dr",
+    "photo": "Taher.jpg",
+    "position": "Affiliated Lecturer",
+    "link": "https://pilehvar.github.io"
+  },
+  {
+    "type": "affiliated lecturer",
+    "name": "Thierry Poibeau",
+    "title": "Dr",
+    "photo": "poibeau.jpeg",
+    "position": "Affiliated Lecturer",
+    "link": "https://www.lattice.cnrs.fr/en/members/direction/thierry-poibeau/"
+  },
+  {
+    "type": "affiliated lecturer",
+    "name": "Edoardo Ponti",
+    "title": "Dr",
+    "photo": "edo.jpeg",
+    "position": "Affiliated Lecturer",
+    "link": "https://ducdauge.github.io/"
+  },
+  {
+    "type": "affiliated lecturer",
+    "name": "Roi Reichart",
+    "title": "Professor",
+    "photo": "roi.webp",
+    "position": "Affiliated Lecturer",
+    "link": "https://roireichart.com/"
+  },
+  {
+    "type": "affiliated lecturer",
+    "name": "Ehsan Shareghi",
+    "title": "Dr",
+    "photo": "ehsan.jpg",
+    "position": "Affiliated Lecturer",
+    "link": "https://eehsan.github.io"
+  },
+
+  {
     "type": "researcher",
     "name": "Simon Baker",
     "title": "Dr",
     "photo": "simon.jpg",
     "position": "Research Associate",
     "link": "https://www.languagesciences.cam.ac.uk/directory/simon-baker"
+  },
+  {
+    "type": "researcher",
+    "name": "Anna Barford",
+    "title": "Dr",
+    "photo": "anna_barford.jpg",
+    "position": "Principal Research Associate",
+    "link": "https://sites.google.com/view/charlottecollins/home"
   },
   {
     "type": "researcher",
@@ -102,24 +135,33 @@
     "name": "Christian Faggionato",
     "title": "Dr",
     "photo": "christian.png",
-    "position": "Associated Researcher",
-    "link": ""
+    "position": "Research Associate",
+    "link": "https://www.researchgate.net/profile/Christian-Faggionato"
   },
   {
     "type": "researcher",
-    "name": "Haim Dubossarsky",
+    "name": "Giulia Occhini",
     "title": "Dr",
-    "photo": "haim.png",
-    "position": "Affiliated Researcher",
-    "link": "https://www.qmul.ac.uk/eecs/people/profiles/haim-dubossarsky.html"
+    "photo": "giulia_occhini.jpeg",
+    "position": "Research Associate",
+    "link": "https://www.turing.ac.uk/people/former-doctoral-students/giulia-occhini"
   },
+  {
+    "type": "researcher",
+    "name": "Ulla Petti",
+    "title": "Dr",
+    "photo": "ulla.jpeg",
+    "position": "Research Associate",
+    "link": "https://www.ullapetti.com/home"
+  },
+
   {
     "type": "researcher",
     "name": "İlknur Karadeniz",
     "title": "Dr",
-    "photo": "",
+    "photo": "ilknurkaradeniz.jpeg",
     "position": "Affiliated Researcher",
-    "link": "https://ilknurkaradeniz.com/"
+    "link": "https://ilknurkaradeniz.net/"
   },
   {
     "type": "researcher",
@@ -131,14 +173,6 @@
   },
   {
     "type": "researcher",
-    "name": "Zihao Fu",
-    "title": "Dr",
-    "photo": "zihao.jpg",
-    "position": "Research Associate",
-    "link": "https://fuzihaofzh.github.io/"
-  },
-  {
-    "type": "researcher",
     "name": "Ebele Mogo",
     "title": "Dr",
     "photo": "ebele.jpg",
@@ -147,20 +181,46 @@
   },
   {
     "type": "researcher",
-    "name": "Ulla Petti",
+    "name": "Refael Tikochinski",
     "title": "Dr",
-    "photo": "ulla.jpeg",
-    "position": "Research Associate",
-    "link": "https://www.ullapetti.com"
+    "photo": "refael.webp",
+    "position": "Affiliated Researcher",
+    "link": "http://refaeltikochinski.website3.me"
   },
   {
-    "type": "researcher",
-    "name": "Ivan Vulić",
-    "title": "Dr",
-    "photo": "ivan.jpg",
-    "position": "Principal Research Associate",
-    "link": "https://sites.google.com/site/ivanvulic/"
+    "type": "student",
+    "name": "Auss Abbood",
+    "title": "Mr",
+    "photo": "auss.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.aussabbood.com"
   },
+  {
+    "type": "student",
+    "name": "Hannah Claus",
+    "title": "Ms",
+    "photo": "hannah_claus.jpg",
+    "position": "PhD Student",
+    "link": "https://www.gatescambridge.org/biography/18870/"
+  },
+  {
+    "type": "student",
+    "name": "Yijiang Dong",
+    "title": "Mr",
+    "photo": "river.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/yijiang-river-dong-9b461a1a6/"
+  },
+  {
+    "type": "student",
+    "name": "Kajetan Dymkiewicz",
+    "title": "Mr",
+    "photo": "kajetan.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/dymkiewicz/"
+  },
+
+
   {
     "type": "student",
     "name": "Panagiotis Fytas",
@@ -173,7 +233,7 @@
     "type": "student",
     "name": "Songbo Hu",
     "title": "Mr",
-    "photo": "songbo.jpeg",
+    "photo": "songbo.jpg",
     "position": "PhD Student",
     "link": "https://songbohu.github.io"
   },
@@ -187,6 +247,22 @@
   },
   {
     "type": "student",
+    "name": "Zack Hui",
+    "title": "Mr",
+    "photo": "zack_hui.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/zheng-hui52/"
+  },
+  {
+    "type": "student",
+    "name": "Zongqian Li",
+    "title": "Mr",
+    "photo": "",
+    "position": "PhD Student",
+    "link": ""
+  },
+  {
+    "type": "student",
     "name": "Chengzu Li",
     "title": "Mr",
     "photo": "chengzu.jpeg",
@@ -195,11 +271,35 @@
   },
   {
     "type": "student",
-    "name": "Yaoyiran Li",
+    "name": "Fangyu Liu",
     "title": "Mr",
-    "photo": "",
+    "photo": "fangyu.jpeg",
     "position": "PhD Student",
-    "link": ""
+    "link": "http://fangyuliu.me/about.html"
+  },
+  {
+    "type": "student",
+    "name": "Yinhong Liu",
+    "title": "Mr",
+    "photo": "yinhong.jpeg",
+    "position": "PhD Student",
+    "link": "http://yinhongliu.com"
+  },
+  {
+    "type": "student",
+    "name": "Sharan Maiya",
+    "title": "Mr",
+    "photo": "sharan.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/sharanmaiya/?originalSubdomain=uk"
+  },
+  {
+    "type": "student",
+    "name": "Paul Martin",
+    "title": "Mr",
+    "photo": "paul.jpeg",
+    "position": "PhD Student",
+    "link": "https://paulsbitsandbytes.com"
   },
   {
     "type": "student",
@@ -211,11 +311,11 @@
   },
   {
     "type": "student",
-    "name": "Evgeniia Razumovskaia",
-    "title": "Ms",
-    "photo": "genie.jpeg",
+    "name": "Lucas Resck",
+    "title": "Mr",
+    "photo": "lucas.webp",
     "position": "PhD Student",
-    "link": "https://evgeniiaraz.github.io"
+    "link": "https://lucasresck.github.io"
   },
   {
     "type": "student",
@@ -235,11 +335,35 @@
   },
   {
     "type": "student",
+    "name": "Sanhanat Sivapiromrat",
+    "title": "Mr",
+    "photo": "moo.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.linkedin.com/in/sanhanat-sivapiromrat/"
+  },
+  {
+    "type": "student",
     "name": "Hannah Sterz",
     "title": "Ms",
     "photo": "hannah.jpeg",
     "position": "PhD Student",
     "link": "https://hsterz.github.io"
+  },
+  {
+    "type": "student",
+    "name": "Meiru Zhang",
+    "title": "Ms",
+    "photo": "meiru.jpeg",
+    "position": "PhD Student",
+    "link": "https://www.gatescambridge.org/biography/18434/"
+  },
+  {
+    "type": "student",
+    "name": "Caiqi Zhang",
+    "title": "Ms",
+    "photo": "caiqi.jpeg",
+    "position": "PhD Student",
+    "link": "https://caiqizh.github.io"
   },
   {
     "type": "student",
@@ -251,19 +375,67 @@
   },
   {
     "type": "student",
-    "name": "Meiru Zhang",
+    "name": "Yijie Zhou",
     "title": "Mr",
-    "photo": "meiru.jpeg",
+    "photo": "yijie.jpg",
     "position": "PhD Student",
-    "link": "https://www.gatescambridge.org/biography/18434/"
+    "link": "https://cyber-e-j.github.io"
   },
   {
-    "type": "student",
+    "type": "ellis student",
+    "name": "Beiduo Chen",
+    "title": "Mr",
+    "photo": "beiduo.png",
+    "position": "Visiting ELLIS PhD Student",
+    "link": "https://mckysse.github.io"
+  },
+  {
+    "type": "ellis student",
+    "name": "Abdullatif Köksal",
+    "title": "Mr",
+    "photo": "latif.jpeg",
+    "position": "Visiting ELLIS PhD Student",
+    "link": "https://akoksal.com"
+  },
+  {
+    "type": "ellis student",
+    "name": "Jiaang Li",
+    "title": "Mr",
+    "photo": "jiaang.jpeg",
+    "position": "Visiting ELLIS PhD Student",
+    "link": "https://jiaangli.github.io"
+  },
+  {
+    "type": "ellis student",
     "name": "Chen Cecilia Liu",
     "title": "Ms",
     "photo": "cecilia.jpeg",
-    "position": "ELLIS PhD Student",
+    "position": "Visiting ELLIS PhD Student",
     "link": "https://ccliu2.github.io"
+  },
+  {
+    "type": "ellis student",
+    "name": "Indraneil Paul",
+    "title": "Mr",
+    "photo": "indraneil.jpeg",
+    "position": "Visiting ELLIS PhD Student",
+    "link": "https://ineil77.github.io"
+  },
+  {
+    "type": "ellis student",
+    "name": "Yifu Qiu",
+    "title": "Mr",
+    "photo": "yifu.jpeg",
+    "position": "Visiting ELLIS PhD Student",
+    "link": "https://yfqiu.netlify.app"
+  },
+  {
+    "type": "ellis student",
+    "name": "Sue Shuyuan Shen",
+    "title": "Mr",
+    "photo": "",
+    "position": "Visiting ELLIS PhD Student",
+    "link": ""
   },
   {
     "type": "administrator",
@@ -272,6 +444,22 @@
     "photo": "",
     "position": "Project Administrator",
     "link": ""
+  },
+  {
+    "type": "alumni",
+    "name": "Alan Ansell",
+    "title": "Dr",
+    "photo": "alan.jpeg",
+    "position": "Research Scientist at Google",
+    "link": "https://www.linkedin.com/in/alan-ansell-658909112/"
+  },
+  {
+    "type": "alumni",
+    "name": "Simon Baker",
+    "title": "Dr",
+    "photo": "",
+    "position": "Senior Vice President of AI Products & Supply Chain Intelligence at Exiger",
+    "link": "https://budzianowski.github.io/"
   },
   {
     "type": "alumni",
@@ -288,6 +476,174 @@
     "photo": "billy.jpeg",
     "position": "Assistant professor at Lingnan University",
     "link": "https://billy322.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Costanza Conforti",
+    "title": "Dr",
+    "photo": "",
+    "position": "Software Engineer at Google",
+    "link": "https://www.linkedin.com/in/costanza-conforti-stanze-b752a9206/"
+  },
+  {
+    "type": "alumni",
+    "name": "Gamal Crichton",
+    "title": "Dr",
+    "photo": "",
+    "position": "Machine Learning Engineer at ZILO",
+    "link": "https://gamalcrichton.com"
+  },
+  {
+    "type": "alumni",
+    "name": "Daniela Gerz",
+    "title": "Dr",
+    "photo": "",
+    "position": "Senior Machine Learning Engineer at PolyAI",
+    "link": "https://www.linkedin.com/in/daniela-gerz-98356a79/"
+  },
+  {
+    "type": "alumni",
+    "name": "Milan Gritta",
+    "title": "Dr",
+    "photo": "",
+    "position": "Senior NLP Research Scientist @ Huawei R&D (UK)",
+    "link": "https://github.com/milangritta"
+  },
+  {
+    "type": "alumni",
+    "name": "Yufan Guo",
+    "title": "Dr",
+    "photo": "",
+    "position": "Applied Science and Engineering Manager at Amazon",
+    "link": "https://www.linkedin.com/in/yufan-guo-651b0041/"
+  },
+  {
+    "type": "alumni",
+    "name": "Felix Hill",
+    "title": "Dr",
+    "photo": "",
+    "position": "Senior Staff Research Scientist at DeepMind",
+    "link": "https://fh295.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Yan Huang",
+    "title": "Dr",
+    "photo": "",
+    "position": "Head of Applied AI and ML for Assessment at Cambridge University Press & Assessment",
+    "link": "https://www.linkedin.com/in/huangyan1/"
+  },
+  {
+    "type": "alumni",
+    "name": "Anjali Kantharuban",
+    "title": "Ms",
+    "photo": "",
+    "position": "PhD student at Carnegie Mellon University",
+    "link": "https://www.anjaliruban.com"
+  },
+  {
+    "type": "alumni",
+    "name": "Colin Kelly",
+    "title": "Dr",
+    "photo": "",
+    "position": "Language Engineering Manager at Unlikely AI",
+    "link": "https://www.linkedin.com/in/hellocolin/"
+  },
+  {
+    "type": "alumni",
+    "name": "Yaoyiran Li",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Engineer at Google",
+    "link": "https://gamalcrichton.com"
+  },
+  {
+    "type": "alumni",
+    "name": "Thomas Lippincott",
+    "title": "Dr",
+    "photo": "",
+    "position": "Associate Research Professor at Johns Hopkins University",
+    "link": "http://www.logical-space.org"
+  },
+  {
+    "type": "alumni",
+    "name": "Qianchu (Flora) Liu",
+    "title": "Dr",
+    "photo": "",
+    "position": "Senior Researcher at Microsoft Research",
+    "link": "https://qianchu.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Olga Majewska",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Scientist at Amazon",
+    "link": "https://www.linkedin.com/in/olga-majewska-08861459/"
+  },
+  {
+    "type": "alumni",
+    "name": "Marinela Parovic",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Scientist at Huawei",
+    "link": "https://www.linkedin.com/in/marinela-parovic/"
+  },
+  {
+    "type": "alumni",
+    "name": "Edoardo M. Ponti",
+    "title": "Dr",
+    "photo": "",
+    "position": "Assistant Professor at the University of Edinburgh",
+    "link": "https://ducdauge.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Victor Prokhorov",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Associate at the University of Edinburgh",
+    "link": "https://victorprokhorov.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Evgeniia Razumovskaia",
+    "title": "Dr",
+    "photo": "",
+    "position": "",
+    "link": "https://evgeniiaraz.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Emily Shen",
+    "title": "Ms",
+    "photo": "",
+    "position": "Systems Engineer at Cloudflare",
+    "link": "https://www.linkedin.com/in/emily-shen-9011941b3/"
+  },
+  {
+    "type": "alumni",
+    "name": "Ekaterina Shutova",
+    "title": "Dr",
+    "photo": "",
+    "position": "Associate Professor at the University of Amsterdam",
+    "link": "https://www.shutova.org"
+  },
+  {
+    "type": "alumni",
+    "name": "Yixuan Su",
+    "title": "Dr",
+    "photo": "",
+    "position": "Research Scientist at Cohere",
+    "link": "https://yxuansu.github.io"
+  },
+  {
+    "type": "alumni",
+    "name": "Yi Zhu",
+    "title": "Dr",
+    "photo": "",
+    "position": "Researcher at TikTok",
+    "link": "https://zhu-y11.github.io"
   }
 ]
 

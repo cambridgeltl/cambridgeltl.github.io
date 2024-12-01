@@ -22,15 +22,14 @@ const Research = () => {
         title={"Research"}
         content={"The Language Technology Lab is actively engaged in and has completed numerous projects that push the boundaries of what NLP and AI technologies can achieve."}
         button={[]}
-        icon="earth_small_blue.png"
-        // icon="kings.jpg"
+        icon="earth_small_blue.jpg"
         id="research"
         fade_direction={"up"}
       />
 
         {ResearchProjectContent.map((project, index) => {
             const direction = index % 2 === 0 ? "left" : "right"; // Even index: "left", Odd index: "right"
-            const photo = project.photo || "earth_small_blue.png"; // Use default "earth.png" if project.photo is empty
+            const photo = project.photo || "earth_small_blue.jpg"; // Use default "earth.png" if project.photo is empty
 
             return (
                 <ProjectBlock

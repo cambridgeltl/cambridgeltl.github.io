@@ -29,7 +29,8 @@ const PeopleListBlock = ({
   button,
   t,
   id,
-  fade_direction
+  fade_direction,
+    show_photo = true,
 }: PeopleBlockProps) => {
 
   // const scrollTo = (id: string) => {
@@ -57,6 +58,9 @@ const PeopleListBlock = ({
               </ContentWrapper>
             </Col>
           </StyledRow>
+          {/*<ContentWrapper>*/}
+          {/*  <StyledTitle>{t(title)}</StyledTitle>*/}
+          {/*</ContentWrapper>*/}
 
           <StyledRow  id={id}  direction={"left"}
                       style={{ marginTop: "0px", marginRight: "60px" }}
@@ -69,37 +73,35 @@ const PeopleListBlock = ({
                       hoverable
                       style={{
                         width: 200,
-                        height: 330,
+                        height: show_photo ? 350 : 150,
                         marginTop : 20,
                       }}
                       onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
 
                       // cover={<Photo src={item.photo} width="100%" height="100%" alt={item.title} />}
                       cover={
-                        item.photo ? (
-                            <CardPhoto
-                                src={`/img/photo/${item.photo}`}
-                                width="100%"
-                                height="200px"
-                                alt={item.title}
-                                // onClick={() => window.open(item.link, '_blank')}  // Open link in a new tab
-                            />
-                        ) : (
-                            <Avatar
-                                shape="square"
-                                size={200}
-                                icon={<UserOutlined />}
-                                style={{ width: '100%', height: '200px' }}  // Adjust to match the dimensions of the CardPhoto
-                                // onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
-
-                            />
-                        )
+                          show_photo &&
+                          (item.photo ? (
+                              <CardPhoto
+                                  src={`${process.env.PUBLIC_URL}/img/photo/${item.photo}`} // Use PUBLIC_URL for compatibility
+                                  width="100%"
+                                  height="200px"
+                                  alt={item.name} // Use item.name for alt text for better accessibility
+                              />
+                          ) : (
+                              <Avatar
+                                  shape="square"
+                                  size={200}
+                                  icon={<UserOutlined />}
+                                  style={{ width: '100%', height: '200px' }} // Adjust to match the dimensions of the CardPhoto
+                              />
+                          ))
                       }
                   >
                     <Meta
                         title={
                           <div style={{ fontWeight: "bold", whiteSpace: "normal", wordWrap: "break-word" }}>
-                            {item.name}
+                            {show_photo ? item.name : (item.title.toLocaleLowerCase() === "dr" ? "Dr " + item.name : item.name)}
                           </div>
                         }
                         description={item.position}
