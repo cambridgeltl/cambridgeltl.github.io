@@ -20,7 +20,7 @@ const Research = () => {
       <ContentBlock
         direction="right"
         title={"Publications"}
-        content={"The Language Technology Lab is at the forefront of NLP and AI research. Explore the ongoing research topics by visiting the Google Scholar profiles of our Principal Investigators (PIs). Click on the profiles below to learn more about their work."}
+        content={"Our research projects are led by three Principal Investigators (PIs). Explore our ongoing research topics by visiting their Google Scholar profiles. Click on the profiles below to learn more about our work."}
         button={[]}
         icon="earth_small_blue.jpg"
         id="publications"
