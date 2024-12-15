@@ -1,4 +1,4 @@
-import {Col, Badge, Card, Tooltip} from "antd";
+import {Col, Badge, Card, Tooltip, Result} from "antd";
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
 import { SeminarHighlightBlockType } from "./types";
@@ -12,6 +12,8 @@ import {
 } from "./styles";
 
 import {useState} from "react";
+import SeminarContent from "../../content/SeminarContent.json";
+import {LoadingOutlined} from "@ant-design/icons";
 
 const SeminarHighlightBlock = ({
      title,
@@ -24,8 +26,19 @@ const SeminarHighlightBlock = ({
      fade_direction,
 }: SeminarHighlightBlockType) => {
 
+    const today = new Date();
+    const parsedSeminars = SeminarContent.map((seminar) => {
+        const seminarDate = new Date(seminar.date);
+        return { ...seminar, seminarDate };
+    });
 
-  const highlight_seminar = content.length > 0 ? content[1] : null;
+
+
+    const upcoming_talks = parsedSeminars.filter((seminar) => seminar.seminarDate >= today);
+
+    const highlight_seminar = upcoming_talks.length > 0 ? upcoming_talks[0] : null;
+
+
     // State to handle abstract toggle
     const [showFullAbstract, setShowFullAbstract] = useState(false);
 
@@ -55,7 +68,7 @@ const SeminarHighlightBlock = ({
           <Col lg={12} md={11} sm={12} xs={24}>
 
             <ContentWrapper>
-              {highlight_seminar && (
+              {highlight_seminar ? (
 
               <Badge.Ribbon text={highlight_seminar.venue}>
                 <Card size="small">
@@ -112,7 +125,20 @@ const SeminarHighlightBlock = ({
 
 
 
-              )}
+              )
+              :
+                  <ContentWrapper>
+                      <Result
+                          icon={<LoadingOutlined style={{ color: "#18216d"}} />}
+                          title={
+                              <span style={{ color: "#18216d" }}>
+                                              More exciting talks coming at the start of the next term!
+                                            </span>
+                          }
+
+                      />
+                  </ContentWrapper>
+              }
             </ContentWrapper>
 
           </Col>

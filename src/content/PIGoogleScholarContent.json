@@ -1,0 +1,27 @@
+[
+  {
+    "type": "academic staff",
+    "name": "Anna Korhonen",
+    "title": "Professor",
+    "photo": "anna_photo.jpg",
+    "position": "Co-head of LTL, Professor of Natural Language Processing",
+    "link": "https://scholar.google.com/citations?user=SCoVoOYAAAAJ"
+  },
+  {
+    "type": "academic staff",
+    "name": "Nigel Collier",
+    "title": "Professor",
+    "photo": "nigel_new_photo.jpg",
+    "position": "Co-head of LTL, Professor of Natural Language Processing",
+    "link": "https://scholar.google.com/citations?user=ZMelBa0AAAAJ"
+
+  },
+  {
+    "type": "academic staff",
+    "name": "Ivan Vulić",
+    "title": "Dr",
+    "photo": "ivan.jpg",
+    "position": "Principal Research Associate, Royal Society University Research Fellowship",
+    "link": "https://scholar.google.com/citations?user=ZX8js60AAAAJ"
+  }
+]

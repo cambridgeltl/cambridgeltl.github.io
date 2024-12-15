@@ -9,13 +9,8 @@ import { UserOutlined } from '@ant-design/icons';
 
 import {
   ContentSection,
-  Content,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
-  StyledRow,
-  ButtonWrapper, StyledTitle, CardPhoto,
+  StyledRow, StyledTitle, CardPhoto,
 } from "./styles";
 
 
@@ -33,12 +28,6 @@ const PeopleListBlock = ({
     show_photo = true,
 }: PeopleBlockProps) => {
 
-  // const scrollTo = (id: string) => {
-  //   const element = document.getElementById(id) as HTMLDivElement;
-  //   element.scrollIntoView({
-  //     behavior: "smooth",
-  //   });
-  // };
 
   return (
     <ContentSection>
@@ -58,16 +47,13 @@ const PeopleListBlock = ({
               </ContentWrapper>
             </Col>
           </StyledRow>
-          {/*<ContentWrapper>*/}
-          {/*  <StyledTitle>{t(title)}</StyledTitle>*/}
-          {/*</ContentWrapper>*/}
 
           <StyledRow  id={id}  direction={"left"}
                       style={{ marginTop: "0px", marginRight: "60px" }}
 
                       gutter={4}>
             {content.map((item, index) => (
-                <Col span={6}>
+                <Col lg={6} md={12} sm={12} xs={24}>
 
                   <Card
                       hoverable

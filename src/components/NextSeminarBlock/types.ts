@@ -14,7 +14,8 @@ export interface SeminarNextBlockType {
         bio: string;
         affiliation: string;
 
-    };
+    }
+    | null;
     instruction: string;
     button?: (
         | {

@@ -18,7 +18,7 @@ const StudentProject = () => {
       <StudentProjectBlock
         direction="right"
         title={"Student Projects"}
-        content={"We offer research projects for MPhil students, some of which can also be adapted for Part II and Part III students. Because we supervise students from a variety of courses in Cambridge, we have classified our projects according to the educational background and the skills required."}
+        content={"We offer research projects for MPhil students, some of which can also be adapted for Part II and Part III students. Please note that these projects are not designed for prospective PhD students. Because we supervise students from a variety of courses in Cambridge, we have classified our projects according to the educational background and the skills required."}
         button={[]}
         icon="chia_presentation.jpeg"
         id="home"

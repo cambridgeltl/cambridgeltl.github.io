@@ -17,9 +17,19 @@ const Container = lazy(() => import("../../common/Container"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const Seminar = () => {
-    const next_seminar = SeminarContent.length > 0 ? SeminarContent[1] : null;
+    const today = new Date();
+    const parsedSeminars = SeminarContent.map((seminar) => {
+        const seminarDate = new Date(seminar.date);
+        return { ...seminar, seminarDate };
+    });
 
 
+
+    const upcoming_talks = parsedSeminars.filter((seminar) => seminar.seminarDate >= today);
+    const completed_talks = parsedSeminars.filter((seminar) => seminar.seminarDate < today);
+
+    const next_seminar = upcoming_talks.length > 0 ? upcoming_talks[0] : null;
+    // const next_seminar = completed_talks[0]
     return (
     <Container>
 
@@ -34,22 +44,19 @@ const Seminar = () => {
         fade_direction={"up"}
       />
 
-        {next_seminar && (
-            <SeminarNextBlock
-                title={"Next Talk"}
-                content={next_seminar}
-                id="seminar"
-                instruction={"Our seminars are held every Thursday from 11:00 AM to 12:00 PM during term time (unless otherwise specified). For more information about our talks, please visit our talks.cam page (talks.cam.ac.uk/show/index/60438)."}
-                direction={"left"}
-                fade_direction={"up"}
-
-            />
-        )}
+        <SeminarNextBlock
+            title={"Next Talk"}
+            content={next_seminar}
+            id="seminar"
+            instruction={"Our seminars are held every Thursday from 11:00 AM to 12:00 PM during term time (unless otherwise specified). For more information about our talks, please visit our talks.cam page (talks.cam.ac.uk/show/index/60438)."}
+            direction={"left"}
+            fade_direction={"up"}
+        />
 
 
         <SeminarListBlock
-            upcoming_talks={SeminarContent}
-            completed_talks={SeminarContent}
+            upcoming_talks={upcoming_talks}
+            completed_talks={completed_talks}
             id="seminar_list"
             direction={"left"}
             fade_direction={"up"}

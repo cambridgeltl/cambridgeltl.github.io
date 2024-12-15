@@ -1,11 +1,19 @@
 [
   {
+    "type": "news",
+    "title": "LTL Christmas Dinner",
+    "text": "We enjoyed a lovely lab-wide dinner to celebrate the end of the term together!",
+    "photo": "LTL_Christmas_2024.jpg",
+    "link": "",
+    "date": "2024-12-03"
+  },
+  {
     "type": "events",
     "title": "LTL @ CHIA Conference",
-    "text": "LTL has been invited to present at the CHIA Conference. We are excited to share our research to the world!",
+    "text": "LTL has been invited to present at the CHIA Conference. We are very happy to share our research presentations and posters with academic and professional communities worldwide!",
     "photo": "chia_presentation.jpeg",
-    "link": "",
-    "date": "2024-10-01"
+    "link": "https://www.chia.cam.ac.uk/events/chia-conference-11-june-2024",
+    "date": "2024-06-11"
   },
   {
     "type": "events",
@@ -22,13 +30,5 @@
     "photo": "halloween.jpeg",
     "link": "https://x.com/CambridgeLTL/status/1587754105191239680",
     "date": "2021-08-02"
-  },
-  {
-    "type": "news",
-    "title": "LTL Welcome Party",
-    "text": "Welcome our new incoming students to join LTL! Welcome our new incoming students to join LTL!",
-    "photo": "people_small.jpg",
-    "link": "",
-    "date": "2024-10-01"
   }
 ]

@@ -53,7 +53,9 @@ const SeminarCardBlock = ({
                 >
                     <StyledContent>
 
-                        {(content.speaker + " (" + content.affiliation + ")")}
+                        {content.affiliation
+                            ? `${content.speaker} (${content.affiliation})`
+                            : content.speaker}
                     </StyledContent>
                 </Tooltip>
                 <StyledContent>

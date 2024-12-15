@@ -1,5 +1,27 @@
 [
   {
+    "title": "Fine-Grained Multilingual Dialogue Evaluation",
+    "abstract": "Dialogue evaluation aims to answer the question: how well does a dialogue system perform? Existing evaluation approaches fall into two main categories: human evaluation and automatic metrics.\n\nHuman evaluation is often considered the gold standard due to its ability to capture the holistic context of dialogues. However, it comes with significant disadvantages, including inconsistency, high cost, and logistical challenges. On the other hand, automatic evaluation metrics are faster, cheaper, and more reproducible but often fail to correlate with human judgment. \n\nDialogue quality is inherently multi-faceted, requiring assessments across various fine-grained dimensions. Breaking down overall quality into specific evaluation dimensions (e.g., grammaticality, coherence, and informativeness) helps reduce subjectivity and provides actionable insights for system improvement. For multilingual dialogues, evaluation dimensions have to consider linguistic and cultural contexts, with both additional granularity and new perspectives.\n\nThis project aims to advance fine-grained multilingual dialogue evaluation by:\n 1) Identifying key dimensions of dialogue quality across multiple languages and cultural contexts.\n 2) Proposing linguistically motivated, fine-grained evaluation protocols for human annotation.\n 3) Developing methods to improve consistency and inter-annotator agreement in multilingual dialogue evaluations.\n 4) Exploring the potential of extending human evaluation protocols to automatic metrics, leveraging large language models (LLMs).",
+    "references": [
+      {
+        "text": "Bandalos, D. L. (2018). Measurement theory and applications for the social sciences. Sections 1–6. Guilford Publications.",
+        "link": "https://www.soc.univ.kiev.ua/sites/default/files/library/elopen/methodology_in_the_social_sciences_deborah_l._bandalos_-_measurement_theory_and_applications_for_the_social_sciences-the_guilford_press_2018.pdf"
+      },
+      {
+        "text": "Mehri et al., 2022. Report from the NSF Future Directions Workshop on Automatic Evaluation of Dialog: Research Directions and Challenges.",
+        "link": "https://arxiv.org/abs/2203.10012"
+      },
+      {
+        "text": "Hu, S., Wang, X., Yuan, M., Korhonen, A., & Vulic, I. 2024. DIALIGHT: Lightweight Multilingual Development and Evaluation of Task-Oriented Dialogue Systems with Large Language Models. In Proceedings of the 2024 NAACL-HLT (Volume 3: System Demonstrations), Mexico City, Mexico.",
+        "link": "https://aclanthology.org/2024.naacl-demo.4/"
+      }
+    ],
+    "contacts": [
+      "Songbo Hu (sh2091@cam.ac.uk)"
+    ],
+    "category": "C"
+  },
+  {
     "title": "Probing pre-trained language models for specialist knowledge",
     "abstract": "Knowledge probing is crucial for understanding the knowledge transfer mechanism behind the pre-trained language models (PLMs) [5]. Despite the growing progress of probing knowledge for PLMs in the general domain, specialised areas such as the biomedical domain are vastly under-explored. To this end, we have proposed a contrastive probing approach [1] that can well address the multi-token issue existing in biomedical knowledge probing tasks. Our initial findings [1] indicate that the real lower bound on the amount of factual knowledge encoded by PLMs is higher than we estimated. Meanwhile, prompt-based probing approaches such as AutoPrompt [3], SoftPrompt [4] and OptiPrompt [5] have been investigated for further improving such lower bound with additional labelled data for fine-tuning prompts. In this project, we will continue to analyse and improve our estimation of the lower bound by optimising both the encoding space (e.g. using our self-supervised contrastive learning technique [1]) and the input space (e.g. using the prompt optimising techniques) [2-4].",
     "references": [

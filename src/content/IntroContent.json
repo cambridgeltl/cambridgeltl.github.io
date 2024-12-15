@@ -2,15 +2,5 @@
   "title": "ADVANCING LANGUAGE TECHNOLOGY FOR GOOD",
   "text": "The Language Technology Lab is a team of researchers pushing the boundaries of natural language processing (NLP) research. Our work targets critical real-world challenges by leveraging the latest advancements in NLP and AI.",
   "button": [
-    {
-      "title": "About Us",
-      "path" : "/people"
-    },
-    {
-      "title": "Our Research",
-      "color": "#fff",
-      "path" : "/research"
-
-    }
   ]
 }

@@ -72,6 +72,8 @@ const CardListBlock = ({
                 >
                   <Card
                       hoverable
+                      onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
+
                       cover={
                           <CardPhoto
                               src={
@@ -83,6 +85,7 @@ const CardListBlock = ({
                               height="250px"
                               alt={item.title || "Default Photo"}
                           />
+
 
                       }
                   >

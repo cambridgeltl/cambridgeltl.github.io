@@ -59,13 +59,28 @@ const StudentProjectListBlock = ({
                                   <StyledTitle style={{ maxWidth: "100%" }}>
                                       {item.title}
                                   </StyledTitle>
-                                  <Content>{item.abstract}</Content>
+                                  <Content>
+
+                                      {/*{item.abstract}*/}
+                                      {item.abstract.split("\n").map((line, index) => (
+                                          <span key={index}>
+      {line}
+                                              <br />
+    </span>
+                                      ))}
+                                  </Content>
+
+
+
                                   {item.references && item.references.length > 0 && (
                                       <div>
                                           <ReferenceText>{"Reference:"}</ReferenceText>
                                           <ol>
                                               {item.references.map((ref_item, ref_index) => (
-                                                  <StyledReferenceItem key={ref_index}>
+                                                  <StyledReferenceItem key={ref_index}
+                                                                       onClick={ref_item.link ? () => window.open(ref_item.link, '_blank') : undefined}  // Conditionally apply the onClick event
+
+                                                  >
                                                       {ref_item.text}
                                                   </StyledReferenceItem>
                                               ))}

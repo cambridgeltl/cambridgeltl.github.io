@@ -41,9 +41,14 @@ const Header = ({ t }: { t: TFunction }) => {
           <Span>{t("People")}</Span>
         </CustomNavLinkSmall>
 
-        <CustomNavLinkSmall onClick={() => history.push("/research")}>
-          <Span>{t("Research")}</Span>
+        {/*<CustomNavLinkSmall onClick={() => history.push("/research")}>*/}
+        {/*  <Span>{t("Research")}</Span>*/}
+        {/*</CustomNavLinkSmall>*/}
+
+        <CustomNavLinkSmall onClick={() => history.push("/publication")}>
+          <Span>{t("Publications")}</Span>
         </CustomNavLinkSmall>
+
 
         <CustomNavLinkSmall onClick={() => history.push("/student_project")}>
           <Span>{t("Student Projects")}</Span>

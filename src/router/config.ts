@@ -9,10 +9,15 @@ const routes = [
     exact: true,
     component: "People",
   },
+  // {
+  //   path: ["/research"],
+  //   exact: true,
+  //   component: "Research",
+  // },
   {
-    path: ["/research"],
+    path: ["/publication"],
     exact: true,
-    component: "Research",
+    component: "Publication",
   },
   {
     path: ["/student_project"],

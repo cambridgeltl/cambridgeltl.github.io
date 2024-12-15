@@ -29,7 +29,7 @@ const People = () => {
       />
 
       <PeopleListBlock
-        title={"Academic Staffs"}
+        title={"Academic Staff"}
         content={PeopleContent.filter((item) => item.type === "academic staff")}
         id="staff"
         fade_direction={"up"}
@@ -47,6 +47,13 @@ const People = () => {
             title={"Researchers"}
             content={PeopleContent.filter((item) => item.type === "researcher")}
             id="researchers"
+            fade_direction={"up"}
+        />
+
+        <PeopleListBlock
+            title={"Affiliated Researchers"}
+            content={PeopleContent.filter((item) => item.type === "affiliated researcher")}
+            id="affiliated_researchers"
             fade_direction={"up"}
         />
 

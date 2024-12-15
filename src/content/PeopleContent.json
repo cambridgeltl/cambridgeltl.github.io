@@ -156,7 +156,7 @@
   },
 
   {
-    "type": "researcher",
+    "type": "affiliated researcher",
     "name": "İlknur Karadeniz",
     "title": "Dr",
     "photo": "ilknurkaradeniz.jpeg",
@@ -164,7 +164,7 @@
     "link": "https://ilknurkaradeniz.net/"
   },
   {
-    "type": "researcher",
+    "type": "affiliated researcher",
     "name": "Olga Majewska",
     "title": "Dr",
     "photo": "olga.jpg",
@@ -172,7 +172,7 @@
     "link": "https://om304.github.io/"
   },
   {
-    "type": "researcher",
+    "type": "affiliated researcher",
     "name": "Ebele Mogo",
     "title": "Dr",
     "photo": "ebele.jpg",
@@ -180,7 +180,7 @@
     "link": "https://www.mrc-epid.cam.ac.uk/people/ebele-mogo/"
   },
   {
-    "type": "researcher",
+    "type": "affiliated researcher",
     "name": "Refael Tikochinski",
     "title": "Dr",
     "photo": "refael.webp",
@@ -409,7 +409,7 @@
     "type": "ellis student",
     "name": "Chen Cecilia Liu",
     "title": "Ms",
-    "photo": "cecilia.jpeg",
+    "photo": "cecilia.jpg",
     "position": "Visiting ELLIS PhD Student",
     "link": "https://ccliu2.github.io"
   },

@@ -57,6 +57,8 @@ const NewsListBlock = ({
                                       height: 440,
                                   }}
                                   hoverable
+                                  onClick={item.link ? () => window.open(item.link, '_blank') : undefined}  // Conditionally apply the onClick event
+
                                   cover={
                                       <CardPhoto
                                           src={`${process.env.PUBLIC_URL}/img/photo/${item.photo}`} // Ensures compatibility with non-root deployments
@@ -68,7 +70,7 @@ const NewsListBlock = ({
                               >
                                   <StyledTitle>{item.title}</StyledTitle>
                                   <StyledAbstract>
-                                      {truncateText(item.text, 150)}
+                                      {truncateText(item.text, 125)}
                                   </StyledAbstract>
                                   <Meta description={item.date} />
                               </Card>
