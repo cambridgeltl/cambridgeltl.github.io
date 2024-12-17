@@ -35,7 +35,7 @@ export const Extra = styled("section")`
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
 `;
 
 export const LogoContainer = styled("div")`
