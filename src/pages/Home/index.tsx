@@ -23,7 +23,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="group_1_zoomed.jpg"
+        icon="group_1_zoomed.jpeg"
         id="home"
         fade_direction={"up"}
       />

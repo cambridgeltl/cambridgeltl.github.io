@@ -23,7 +23,7 @@ const People = () => {
         title={"People"}
         content={"We are a team of academics, professionals, and students from around the world, working together at the University of Cambridge to tackle critical real-world challenges using cutting-edge technologies in NLP and AI."}
         button={[]}
-        icon="ltl_garden_high.jpg"
+        icon="ltl_garden_high.jpeg"
         id="home"
         fade_direction={"up"}
       />

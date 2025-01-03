@@ -289,7 +289,7 @@
     "type": "student",
     "name": "Sharan Maiya",
     "title": "Mr",
-    "photo": "sharan.jpeg",
+    "photo": "sharan.jpg",
     "position": "PhD Student",
     "link": "https://www.linkedin.com/in/sharanmaiya/?originalSubdomain=uk"
   },
@@ -385,7 +385,7 @@
     "type": "ellis student",
     "name": "Beiduo Chen",
     "title": "Mr",
-    "photo": "beiduo.png",
+    "photo": "beiduo.jpg",
     "position": "Visiting ELLIS PhD Student",
     "link": "https://mckysse.github.io"
   },
@@ -409,7 +409,7 @@
     "type": "ellis student",
     "name": "Chen Cecilia Liu",
     "title": "Ms",
-    "photo": "cecilia.jpg",
+    "photo": "cecilia.jpeg",
     "position": "Visiting ELLIS PhD Student",
     "link": "https://ccliu2.github.io"
   },
